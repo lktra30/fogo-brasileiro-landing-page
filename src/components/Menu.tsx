@@ -13,19 +13,16 @@ const Menu = () => {
     {
       name: "Picanha Premium",
       description: "The crown jewel of Brazilian barbecue, seasoned with rock salt and grilled to perfection",
-      price: "$38",
       image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       name: "Cordeiro Especial",
       description: "Tender lamb marinated in herbs and slow-roasted over open coals",
-      price: "$42",
       image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       name: "Costela Defumada",
       description: "Smoked beef ribs with our signature dry rub, fall-off-the-bone tender",
-      price: "$35",
       image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     }
   ];
@@ -63,16 +60,13 @@ const Menu = () => {
                       <p className="font-serif text-sm text-gray-700 mb-4 leading-relaxed">
                         {item.description}
                       </p>
-                      <div className="flex items-center justify-between">
-                        <span className="font-slab text-xl font-bold text-brand-red">
-                          {item.price}
-                        </span>
+                      <div className="flex justify-center">
                         <Button 
                           variant="outline" 
                           size="sm"
                           className="border-2 border-black text-black hover:bg-black hover:text-white transition-all duration-300"
                         >
-                          Add to Order
+                          Order
                         </Button>
                       </div>
                     </div>
