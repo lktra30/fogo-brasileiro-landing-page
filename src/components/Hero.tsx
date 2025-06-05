@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black bg-opacity-60" />
       
       {/* Content */}
-      <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center">
+      <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center pt-16">
         <h1 className="font-slab text-5xl md:text-7xl lg:text-8xl font-black text-white mb-6 animate-fade-in leading-tight">
           BRASA VIVA
         </h1>
