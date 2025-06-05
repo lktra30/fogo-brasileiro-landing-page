@@ -1,5 +1,12 @@
 
 import { Button } from "@/components/ui/button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const Menu = () => {
   const menuItems = [
@@ -35,43 +42,47 @@ const Menu = () => {
           </p>
         </div>
 
-        <div className="space-y-16">
-          {menuItems.map((item, index) => (
-            <div 
-              key={index}
-              className={`flex flex-col lg:flex-row items-center gap-12 ${
-                index % 2 === 1 ? 'lg:flex-row-reverse' : ''
-              }`}
-            >
-              <div className="lg:w-1/2">
-                <img 
-                  src={item.image} 
-                  alt={item.name}
-                  className="w-full h-80 object-cover rounded-lg shadow-2xl"
-                />
-              </div>
-              
-              <div className="lg:w-1/2 text-center lg:text-left">
-                <h3 className="font-slab text-3xl font-bold text-gray-900 mb-4">
-                  {item.name}
-                </h3>
-                <p className="font-serif text-lg text-gray-700 mb-6 leading-relaxed">
-                  {item.description}
-                </p>
-                <div className="flex items-center justify-center lg:justify-start gap-6">
-                  <span className="font-slab text-2xl font-bold text-brand-red">
-                    {item.price}
-                  </span>
-                  <Button 
-                    variant="outline" 
-                    className="border-2 border-black text-black hover:bg-black hover:text-white transition-all duration-300"
-                  >
-                    Add to Order
-                  </Button>
-                </div>
-              </div>
-            </div>
-          ))}
+        <div className="relative max-w-5xl mx-auto">
+          <Carousel className="w-full">
+            <CarouselContent className="-ml-4">
+              {menuItems.map((item, index) => (
+                <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div className="bg-white rounded-lg shadow-lg overflow-hidden h-full">
+                    <div className="aspect-square overflow-hidden">
+                      <img 
+                        src={item.image} 
+                        alt={item.name}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    
+                    <div className="p-6">
+                      <h3 className="font-slab text-xl font-bold text-gray-900 mb-3">
+                        {item.name}
+                      </h3>
+                      <p className="font-serif text-sm text-gray-700 mb-4 leading-relaxed">
+                        {item.description}
+                      </p>
+                      <div className="flex items-center justify-between">
+                        <span className="font-slab text-xl font-bold text-brand-red">
+                          {item.price}
+                        </span>
+                        <Button 
+                          variant="outline" 
+                          size="sm"
+                          className="border-2 border-black text-black hover:bg-black hover:text-white transition-all duration-300"
+                        >
+                          Add to Order
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-4" />
+            <CarouselNext className="right-4" />
+          </Carousel>
         </div>
 
         <div className="text-center mt-16">
