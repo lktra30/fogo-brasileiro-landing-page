@@ -31,7 +31,7 @@ const Menu = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Cardápio Especial
+            Menu
           </h2>
           <p className="font-sans text-xl text-gray-600 max-w-2xl mx-auto">
             Premium cuts prepared with traditional Brazilian techniques and served with authentic sides
