@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Car, DoorOpen, Utensils, Truck } from "lucide-react";
 
@@ -25,7 +24,7 @@ const Promotions = () => {
   ];
 
   return (
-    <section className="py-20 bg-brand-dark-red relative overflow-hidden">
+    <section className="py-20 bg-brand-dark-red concrete-texture-dark relative overflow-hidden">
       {/* Background watermark */}
       <div className="absolute inset-0 opacity-5">
         <div className="w-full h-full flex items-center justify-center">

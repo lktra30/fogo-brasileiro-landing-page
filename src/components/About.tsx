@@ -1,7 +1,6 @@
-
 const About = () => {
   return (
-    <section className="py-20 bg-brand-cream">
+    <section className="py-20 bg-brand-cream concrete-texture-light relative">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Decorative line */}
