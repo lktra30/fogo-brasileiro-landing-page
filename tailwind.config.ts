@@ -71,9 +71,11 @@ export default {
 				'brand-black': '#000000'
 			},
 			fontFamily: {
-				'serif': ['Playfair Display', 'serif'],
-				'slab': ['Roboto Slab', 'serif'],
-				'sans': ['Inter', 'sans-serif'],
+				'serif': ['Rye', 'serif'],
+				'slab': ['Cabin Sketch', 'serif'],
+				'sans': ['Special Elite', 'monospace'],
+				'rustic': ['Fredoka One', 'sans-serif'],
+				'bold': ['Bungee', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
