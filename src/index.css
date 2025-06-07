@@ -102,36 +102,31 @@
 }
 
 @layer utilities {
-  /* Brick texture background */
+  /* Realistic brick texture backgrounds using images */
   .concrete-texture {
-    background-image: 
-      linear-gradient(90deg, rgba(120, 80, 60, 0.8) 0px, rgba(120, 80, 60, 0.8) 1px, transparent 1px, transparent 60px),
-      linear-gradient(0deg, rgba(120, 80, 60, 0.8) 0px, rgba(120, 80, 60, 0.8) 1px, transparent 1px, transparent 30px),
-      linear-gradient(90deg, rgba(140, 100, 80, 0.6) 0px, rgba(140, 100, 80, 0.6) 1px, transparent 1px, transparent 60px),
-      linear-gradient(0deg, rgba(140, 100, 80, 0.6) 0px, rgba(140, 100, 80, 0.6) 1px, transparent 1px, transparent 30px);
-    background-size: 60px 30px, 60px 30px, 60px 30px, 60px 30px;
-    background-position: 0 0, 0 0, 30px 15px, 30px 15px;
+    background-image: url('https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80');
+    background-size: 300px 200px;
+    background-repeat: repeat;
+    background-attachment: fixed;
   }
 
   /* Dark brick texture for darker sections */
   .concrete-texture-dark {
     background-image: 
-      linear-gradient(90deg, rgba(80, 40, 30, 0.4) 0px, rgba(80, 40, 30, 0.4) 1px, transparent 1px, transparent 60px),
-      linear-gradient(0deg, rgba(80, 40, 30, 0.4) 0px, rgba(80, 40, 30, 0.4) 1px, transparent 1px, transparent 30px),
-      linear-gradient(90deg, rgba(100, 60, 50, 0.3) 0px, rgba(100, 60, 50, 0.3) 1px, transparent 1px, transparent 60px),
-      linear-gradient(0deg, rgba(100, 60, 50, 0.3) 0px, rgba(100, 60, 50, 0.3) 1px, transparent 1px, transparent 30px);
-    background-size: 60px 30px, 60px 30px, 60px 30px, 60px 30px;
-    background-position: 0 0, 0 0, 30px 15px, 30px 15px;
+      linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url('https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80');
+    background-size: 300px 200px;
+    background-repeat: repeat;
+    background-attachment: fixed;
   }
 
   /* Light brick texture for lighter sections */
   .concrete-texture-light {
     background-image: 
-      linear-gradient(90deg, rgba(160, 120, 100, 0.5) 0px, rgba(160, 120, 100, 0.5) 1px, transparent 1px, transparent 60px),
-      linear-gradient(0deg, rgba(160, 120, 100, 0.5) 0px, rgba(160, 120, 100, 0.5) 1px, transparent 1px, transparent 30px),
-      linear-gradient(90deg, rgba(180, 140, 120, 0.4) 0px, rgba(180, 140, 120, 0.4) 1px, transparent 1px, transparent 60px),
-      linear-gradient(0deg, rgba(180, 140, 120, 0.4) 0px, rgba(180, 140, 120, 0.4) 1px, transparent 1px, transparent 30px);
-    background-size: 60px 30px, 60px 30px, 60px 30px, 60px 30px;
-    background-position: 0 0, 0 0, 30px 15px, 30px 15px;
+      linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+      url('https://images.unsplash.com/photo-1524230572899-a752b3835840?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80');
+    background-size: 250px 167px;
+    background-repeat: repeat;
+    background-attachment: fixed;
   }
 }
