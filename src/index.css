@@ -36,12 +36,19 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
+
     --sidebar-foreground: 240 5.3% 26.1%;
+
     --sidebar-primary: 240 5.9% 10%;
+
     --sidebar-primary-foreground: 0 0% 98%;
+
     --sidebar-accent: 240 4.8% 95.9%;
+
     --sidebar-accent-foreground: 240 5.9% 10%;
+
     --sidebar-border: 220 13% 91%;
+
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -95,122 +102,39 @@
 }
 
 @layer utilities {
-  /* Textura de madeira rústica */
-  .wood-texture {
+  /* Concrete texture using CSS patterns */
+  .concrete-texture {
     background-image: 
-      linear-gradient(90deg, rgba(139, 69, 19, 0.1) 0%, transparent 50%, rgba(139, 69, 19, 0.1) 100%),
-      linear-gradient(45deg, rgba(160, 82, 45, 0.15) 25%, transparent 25%, transparent 75%, rgba(160, 82, 45, 0.15) 75%),
-      linear-gradient(-45deg, rgba(139, 69, 19, 0.08) 25%, transparent 25%, transparent 75%, rgba(139, 69, 19, 0.08) 75%),
-      radial-gradient(circle at 20% 20%, rgba(101, 67, 33, 0.2) 2px, transparent 2px),
-      radial-gradient(circle at 80% 60%, rgba(139, 69, 19, 0.15) 1px, transparent 1px);
-    background-size: 60px 30px, 40px 40px, 40px 40px, 80px 80px, 60px 60px;
-    background-position: 0 0, 0 0, 0 0, 0 0, 30px 30px;
+      radial-gradient(circle at 20% 20%, rgba(200, 200, 200, 0.3) 1px, transparent 1px),
+      radial-gradient(circle at 80% 80%, rgba(180, 180, 180, 0.2) 1px, transparent 1px),
+      radial-gradient(circle at 40% 60%, rgba(160, 160, 160, 0.1) 2px, transparent 2px),
+      linear-gradient(45deg, rgba(220, 220, 220, 0.1) 25%, transparent 25%),
+      linear-gradient(-45deg, rgba(210, 210, 210, 0.1) 25%, transparent 25%);
+    background-size: 30px 30px, 25px 25px, 40px 40px, 15px 15px, 15px 15px;
+    background-position: 0 0, 10px 10px, 20px 5px, 0 0, 7px 7px;
   }
 
-  /* Textura de churrasco/brasas */
-  .charcoal-texture {
+  /* Dark concrete texture for darker sections */
+  .concrete-texture-dark {
     background-image: 
-      radial-gradient(circle at 30% 40%, rgba(139, 69, 19, 0.3) 2px, transparent 2px),
-      radial-gradient(circle at 70% 20%, rgba(101, 67, 33, 0.2) 1px, transparent 1px),
-      radial-gradient(circle at 20% 80%, rgba(160, 82, 45, 0.25) 1.5px, transparent 1.5px),
-      linear-gradient(45deg, rgba(139, 69, 19, 0.1) 25%, transparent 25%),
-      linear-gradient(-45deg, rgba(101, 67, 33, 0.1) 25%, transparent 25%);
-    background-size: 50px 50px, 30px 30px, 40px 40px, 20px 20px, 20px 20px;
-    background-position: 0 0, 15px 25px, 25px 10px, 0 0, 10px 10px;
+      radial-gradient(circle at 20% 20%, rgba(100, 100, 100, 0.4) 1px, transparent 1px),
+      radial-gradient(circle at 80% 80%, rgba(80, 80, 80, 0.3) 1px, transparent 1px),
+      radial-gradient(circle at 40% 60%, rgba(60, 60, 60, 0.2) 2px, transparent 2px),
+      linear-gradient(45deg, rgba(120, 120, 120, 0.2) 25%, transparent 25%),
+      linear-gradient(-45deg, rgba(110, 110, 110, 0.2) 25%, transparent 25%);
+    background-size: 30px 30px, 25px 25px, 40px 40px, 15px 15px, 15px 15px;
+    background-position: 0 0, 10px 10px, 20px 5px, 0 0, 7px 7px;
   }
 
-  /* Textura de papel pardo/pergaminho */
-  .parchment-texture {
+  /* Light concrete texture for lighter sections */
+  .concrete-texture-light {
     background-image: 
-      radial-gradient(circle at 25% 25%, rgba(139, 69, 19, 0.08) 1px, transparent 1px),
-      radial-gradient(circle at 75% 75%, rgba(160, 82, 45, 0.06) 1px, transparent 1px),
-      linear-gradient(45deg, rgba(210, 180, 140, 0.1) 1px, transparent 1px),
-      linear-gradient(-45deg, rgba(222, 184, 135, 0.08) 1px, transparent 1px);
-    background-size: 25px 25px, 35px 35px, 15px 15px, 18px 18px;
-    background-position: 0 0, 12px 12px, 0 0, 8px 8px;
+      radial-gradient(circle at 20% 20%, rgba(240, 240, 240, 0.5) 1px, transparent 1px),
+      radial-gradient(circle at 80% 80%, rgba(230, 230, 230, 0.4) 1px, transparent 1px),
+      radial-gradient(circle at 40% 60%, rgba(220, 220, 220, 0.3) 2px, transparent 2px),
+      linear-gradient(45deg, rgba(250, 250, 250, 0.3) 25%, transparent 25%),
+      linear-gradient(-45deg, rgba(245, 245, 245, 0.3) 25%, transparent 25%);
+    background-size: 30px 30px, 25px 25px, 40px 40px, 15px 15px, 15px 15px;
+    background-position: 0 0, 10px 10px, 20px 5px, 0 0, 7px 7px;
   }
-
-  /* Textura de tijolo/argila */
-  .brick-texture {
-    background-image: 
-      linear-gradient(0deg, rgba(139, 69, 19, 0.2) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(160, 82, 45, 0.15) 1px, transparent 1px),
-      radial-gradient(circle at 50% 50%, rgba(101, 67, 33, 0.1) 2px, transparent 2px);
-    background-size: 40px 20px, 80px 40px, 30px 30px;
-    background-position: 0 0, 0 0, 15px 15px;
-  }
-
-  /* Efeito de fumaça sutil */
-  .smoke-effect {
-    position: relative;
-  }
-  
-  .smoke-effect::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-      radial-gradient(ellipse at 20% 10%, rgba(255, 255, 255, 0.1) 0%, transparent 40%),
-      radial-gradient(ellipse at 60% 20%, rgba(255, 255, 255, 0.08) 0%, transparent 35%),
-      radial-gradient(ellipse at 80% 30%, rgba(255, 255, 255, 0.06) 0%, transparent 30%);
-    pointer-events: none;
-    z-index: 1;
-  }
-
-  /* Bordas queimadas/rústicas */
-  .rustic-border {
-    position: relative;
-    border-radius: 8px;
-  }
-  
-  .rustic-border::before {
-    content: '';
-    position: absolute;
-    inset: -2px;
-    background: linear-gradient(45deg, #8B4513, #A0522D, #654321, #8B4513);
-    border-radius: 10px;
-    z-index: -1;
-    opacity: 0.3;
-  }
-
-  /* Sombras rústicas */
-  .rustic-shadow {
-    box-shadow: 
-      0 4px 8px rgba(139, 69, 19, 0.2),
-      0 2px 4px rgba(101, 67, 33, 0.1),
-      inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  }
-
-  /* Textura de couro */
-  .leather-texture {
-    background-image: 
-      radial-gradient(circle at 20% 20%, rgba(101, 67, 33, 0.3) 1px, transparent 1px),
-      radial-gradient(circle at 60% 60%, rgba(139, 69, 19, 0.2) 1px, transparent 1px),
-      radial-gradient(circle at 80% 20%, rgba(160, 82, 45, 0.15) 1px, transparent 1px),
-      linear-gradient(45deg, rgba(139, 69, 19, 0.05) 50%, transparent 50%);
-    background-size: 15px 15px, 20px 20px, 25px 25px, 10px 10px;
-    background-position: 0 0, 7px 7px, 12px 3px, 0 0;
-  }
-}
-
-/* Animações específicas para o tema */
-@keyframes flicker {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.8; }
-}
-
-.fire-glow {
-  animation: flicker 2s ease-in-out infinite;
-}
-
-/* Gradientes temáticos */
-.brazilian-gradient {
-  background: linear-gradient(135deg, #8B4513 0%, #D2691E 25%, #CD853F 50%, #F4A460 75%, #DEB887 100%);
-}
-
-.barbecue-gradient {
-  background: linear-gradient(45deg, #2F1B14 0%, #8B4513 30%, #A0522D 60%, #D2691E 100%);
 }

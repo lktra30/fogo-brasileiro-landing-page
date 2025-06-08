@@ -14,14 +14,14 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-smoke-white/95 backdrop-blur-sm border-b border-earth-brown/20 shadow-rustic wood-texture">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <button 
               onClick={() => scrollToSection('hero')}
-              className="font-gaucho text-2xl font-bold text-brand-red hover:text-ember-red transition-colors fire-glow"
+              className="font-serif text-2xl font-bold text-brand-red hover:text-brand-dark-red transition-colors"
             >
               BRASA VIVA
             </button>
@@ -31,38 +31,34 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <button 
               onClick={() => scrollToSection('hero')}
-              className="font-churrasco text-earth-brown hover:text-brand-red transition-colors font-medium relative group"
+              className="font-sans text-gray-700 hover:text-brand-red transition-colors font-medium"
             >
               Home
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-red transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button 
               onClick={() => scrollToSection('about')}
-              className="font-churrasco text-earth-brown hover:text-brand-red transition-colors font-medium relative group"
+              className="font-sans text-gray-700 hover:text-brand-red transition-colors font-medium"
             >
-              Nossa História
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-red transition-all duration-300 group-hover:w-full"></span>
+              About Us
             </button>
             <button 
               onClick={() => scrollToSection('menu')}
-              className="font-churrasco text-earth-brown hover:text-brand-red transition-colors font-medium relative group"
+              className="font-sans text-gray-700 hover:text-brand-red transition-colors font-medium"
             >
-              Cardápio
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-red transition-all duration-300 group-hover:w-full"></span>
+              Menu
             </button>
             <button 
               onClick={() => scrollToSection('visit')}
-              className="font-churrasco text-earth-brown hover:text-brand-red transition-colors font-medium relative group"
+              className="font-sans text-gray-700 hover:text-brand-red transition-colors font-medium"
             >
-              Localização
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-red transition-all duration-300 group-hover:w-full"></span>
+              Contact
             </button>
           </nav>
 
           {/* Mobile Menu Button */}
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 text-earth-brown hover:text-brand-red transition-colors rustic-border"
+            className="md:hidden p-2 text-gray-700 hover:text-brand-red transition-colors"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -70,31 +66,31 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-earth-brown/20 parchment-texture">
+          <div className="md:hidden py-4 border-t border-gray-200">
             <nav className="flex flex-col space-y-4">
               <button 
                 onClick={() => scrollToSection('hero')}
-                className="font-churrasco text-earth-brown hover:text-brand-red transition-colors font-medium text-left"
+                className="font-sans text-gray-700 hover:text-brand-red transition-colors font-medium text-left"
               >
                 Home
               </button>
               <button 
                 onClick={() => scrollToSection('about')}
-                className="font-churrasco text-earth-brown hover:text-brand-red transition-colors font-medium text-left"
+                className="font-sans text-gray-700 hover:text-brand-red transition-colors font-medium text-left"
               >
-                Nossa História
+                About Us
               </button>
               <button 
                 onClick={() => scrollToSection('menu')}
-                className="font-churrasco text-earth-brown hover:text-brand-red transition-colors font-medium text-left"
+                className="font-sans text-gray-700 hover:text-brand-red transition-colors font-medium text-left"
               >
-                Cardápio
+                Menu
               </button>
               <button 
                 onClick={() => scrollToSection('visit')}
-                className="font-churrasco text-earth-brown hover:text-brand-red transition-colors font-medium text-left"
+                className="font-sans text-gray-700 hover:text-brand-red transition-colors font-medium text-left"
               >
-                Localização
+                Contact
               </button>
             </nav>
           </div>
