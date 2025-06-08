@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Car, DoorOpen, Utensils, Truck } from "lucide-react";
 
@@ -7,71 +8,79 @@ const Promotions = () => {
       name: "Uber Eats",
       icon: Car,
       url: "https://www.ubereats.com",
-      description: "Fast delivery in 30-45 minutes"
+      description: "Entrega rápida em 30-45 minutos"
     },
     {
-      name: "DoorDash",
+      name: "iFood",
       icon: DoorOpen,
-      url: "https://www.doordash.com",
-      description: "Reliable delivery service"
+      url: "https://www.ifood.com.br",
+      description: "Serviço de entrega confiável"
     },
     {
-      name: "Toast",
+      name: "Delivery Próprio",
       icon: Utensils,
-      url: "https://pos.toasttab.com",
-      description: "Order directly from our kitchen"
+      url: "#",
+      description: "Pedidos direto da nossa cozinha"
     }
   ];
 
   return (
-    <section className="py-20 bg-brand-dark-red concrete-texture-dark relative overflow-hidden">
-      {/* Background watermark */}
-      <div className="absolute inset-0 opacity-5">
+    <section className="py-20 bg-charcoal-gray brick-texture relative overflow-hidden">
+      {/* Background decorativo */}
+      <div className="absolute inset-0 opacity-10">
         <div className="w-full h-full flex items-center justify-center">
-          <Truck size={128} className="text-white" />
+          <Truck size={200} className="text-rust-orange animate-fire-dance" />
         </div>
       </div>
 
+      {/* Elementos de brasa */}
+      <div className="absolute top-10 left-20 w-6 h-6 bg-ember-red rounded-full opacity-60 animate-fire-dance"></div>
+      <div className="absolute bottom-16 right-16 w-8 h-8 bg-rust-orange rounded-full opacity-50 animate-fire-dance" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute top-1/2 left-10 w-4 h-4 bg-brand-red rounded-full opacity-70 animate-fire-dance" style={{ animationDelay: '2s' }}></div>
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-white mb-8">
+          <div className="w-32 h-2 bg-gradient-to-r from-rust-orange via-ember-red to-brand-red mx-auto mb-8 rustic-border fire-glow"></div>
+          <h2 className="font-gaucho text-4xl md:text-5xl font-bold text-smoke-white mb-8">
             Delivery
           </h2>
-          <p className="font-serif text-xl text-white mb-12 opacity-90">
-            Enjoy our authentic Brazilian churrasco from the comfort of your home
+          <p className="font-churrasco text-xl text-sand-beige mb-12 opacity-90">
+            Desfrute do nosso autêntico churrasco brasileiro no conforto da sua casa
           </p>
           
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {deliveryServices.map((service, index) => {
               const IconComponent = service.icon;
               return (
-                <div key={index} className="bg-black bg-opacity-30 p-8 rounded-lg border border-red-300">
+                <div key={index} className="bg-wood-brown/30 p-8 rounded-lg border border-rust-orange/30 rustic-border wood-texture backdrop-blur-sm">
                   <div className="flex justify-center mb-4">
-                    <IconComponent size={64} className="text-white" />
+                    <div className="p-4 bg-brand-red/20 rounded-full rustic-border">
+                      <IconComponent size={48} className="text-sand-beige" />
+                    </div>
                   </div>
-                  <h3 className="font-slab text-2xl font-bold text-white mb-4">
+                  <h3 className="font-fazenda text-2xl font-bold text-smoke-white mb-4">
                     {service.name}
                   </h3>
-                  <p className="font-sans text-red-200 mb-6">
+                  <p className="font-churrasco text-leather-tan mb-6">
                     {service.description}
                   </p>
                   <Button 
-                    className="w-full bg-white hover:bg-gray-100 text-black font-bold text-lg py-3 rounded-lg transition-all duration-300"
-                    onClick={() => window.open(service.url, '_blank')}
+                    className="w-full bg-brand-red hover:bg-ember-red text-smoke-white font-bold text-lg py-3 rounded-lg transition-all duration-300 shadow-ember rustic-border fire-glow"
+                    onClick={() => service.url !== '#' && window.open(service.url, '_blank')}
                   >
-                    ORDER NOW
+                    PEDIR AGORA
                   </Button>
                 </div>
               );
             })}
           </div>
 
-          <div className="bg-white bg-opacity-10 p-8 rounded-lg">
-            <h3 className="font-slab text-2xl font-bold text-white mb-4">
-              Free Delivery on Orders Over $50
+          <div className="bg-earth-brown/20 p-8 rounded-lg rustic-border leather-texture backdrop-blur-sm">
+            <h3 className="font-fazenda text-2xl font-bold text-smoke-white mb-4 fire-glow">
+              Frete Grátis em Pedidos Acima de R$ 80
             </h3>
-            <p className="font-serif text-white text-lg">
-              Get your favorite Brazilian dishes delivered fresh and hot to your door
+            <p className="font-churrasco text-sand-beige text-lg">
+              Receba seus pratos brasileiros favoritos frescos e quentinhos na sua porta
             </p>
           </div>
         </div>
