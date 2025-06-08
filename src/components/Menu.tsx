@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import {
   Carousel,
@@ -28,13 +29,13 @@ const Menu = () => {
   ];
 
   return (
-    <section className="py-20 bg-brand-red concrete-texture relative">
+    <section className="py-20 bg-brand-beige concrete-texture relative">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Menu
           </h2>
-          <p className="font-sans text-xl text-brand-cream max-w-2xl mx-auto">
+          <p className="font-sans text-xl text-gray-600 max-w-2xl mx-auto">
             Premium cuts prepared with traditional Brazilian techniques and served with authentic sides
           </p>
         </div>
@@ -81,7 +82,7 @@ const Menu = () => {
 
         <div className="text-center mt-16">
           <Button 
-            className="bg-white hover:bg-brand-cream text-brand-red font-bold text-lg px-10 py-3 rounded-lg"
+            className="bg-brand-red hover:bg-brand-dark-red text-white font-bold text-lg px-10 py-3 rounded-lg"
             size="lg"
           >
             VIEW FULL MENU
@@ -93,3 +94,4 @@ const Menu = () => {
 };
 
 export default Menu;
+
