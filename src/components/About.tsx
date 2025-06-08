@@ -1,19 +1,20 @@
+
 const About = () => {
   return (
-    <section className="py-20 bg-brand-cream concrete-texture-light relative">
+    <section className="py-24 bg-brand-cream concrete-texture-light relative border-t-4 border-brand-red">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Decorative line */}
-          <div className="w-24 h-1 bg-brand-red mx-auto mb-8" />
+          <div className="w-32 h-2 bg-brand-red mx-auto mb-10 shadow-lg" />
           
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="font-serif text-5xl md:text-6xl font-black text-gray-900 mb-16 text-center tracking-wide drop-shadow-md">
             Our History
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
             {/* Image on the left */}
             <div className="order-2 md:order-1">
-              <div className="aspect-square overflow-hidden rounded-lg shadow-lg">
+              <div className="aspect-square overflow-hidden rounded-lg shadow-2xl border-4 border-gray-800">
                 <img 
                   src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                   alt="Brazilian barbecue"
@@ -24,20 +25,20 @@ const About = () => {
             
             {/* Content on the right */}
             <div className="order-1 md:order-2">
-              <div className="space-y-6 text-lg leading-relaxed text-gray-700">
-                <p className="font-serif">
+              <div className="space-y-8 text-xl leading-relaxed text-gray-800 bg-white p-8 rounded-lg shadow-xl border-l-8 border-brand-red">
+                <p className="font-serif font-bold">
                   At Brasa Viva, we bring the authentic spirit of Brazilian churrasco to your table. 
                   Our master grill chefs, trained in the traditional gaucho methods, prepare each cut 
                   with the passion and precision that has been passed down through generations.
                 </p>
                 
-                <p className="font-sans">
+                <p className="font-sans font-semibold">
                   From the finest picanha to our signature lamb, every piece of meat is seasoned with 
                   our special blend of rock salt and grilled over open flames, creating the perfect 
                   balance of smoky flavor and tender texture that defines true Brazilian barbecue.
                 </p>
                 
-                <p className="font-serif italic text-brand-dark-red">
+                <p className="font-serif italic text-brand-dark-red font-bold text-2xl">
                   "More than a meal, it's a celebration of Brazilian culture and the art of fire."
                 </p>
               </div>
@@ -45,7 +46,7 @@ const About = () => {
           </div>
           
           {/* Decorative bottom line */}
-          <div className="w-24 h-1 bg-gray-800 mx-auto mt-12" />
+          <div className="w-32 h-2 bg-gray-800 mx-auto mt-16 shadow-lg" />
         </div>
       </div>
     </section>

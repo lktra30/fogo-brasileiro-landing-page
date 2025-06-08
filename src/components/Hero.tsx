@@ -12,19 +12,19 @@ const Hero = () => {
         }}
       />
       
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-60" />
+      {/* Dark Overlay with texture */}
+      <div className="absolute inset-0 bg-black bg-opacity-70 concrete-texture-dark" />
       
       {/* Content */}
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center pt-16">
-        <h1 className="font-slab text-5xl md:text-7xl lg:text-8xl font-black text-white mb-6 animate-fade-in leading-tight">
+        <h1 className="font-slab text-6xl md:text-8xl lg:text-9xl font-black text-white mb-8 animate-fade-in leading-tight tracking-wider drop-shadow-2xl">
           BRASA VIVA
         </h1>
-        <p className="font-serif text-xl md:text-2xl lg:text-3xl text-white mb-8 max-w-3xl animate-fade-in opacity-90">
+        <p className="font-serif text-2xl md:text-3xl lg:text-4xl text-white mb-10 max-w-4xl animate-fade-in opacity-95 font-bold tracking-wide drop-shadow-lg">
           Experience the Authentic Fire & Passion of Brazilian Churrasco
         </p>
         <Button 
-          className="bg-brand-red hover:bg-red-700 text-white font-bold text-lg px-12 py-4 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1"
+          className="bg-brand-red hover:bg-red-700 text-white font-black text-xl px-16 py-6 rounded-lg shadow-2xl transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1 border-4 border-red-800"
           size="lg"
         >
           RESERVE YOUR TABLE
@@ -33,8 +33,8 @@ const Hero = () => {
       
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
-        <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse" />
+        <div className="w-8 h-12 border-4 border-white rounded-full flex justify-center shadow-lg">
+          <div className="w-2 h-4 bg-white rounded-full mt-3 animate-pulse" />
         </div>
       </div>
     </section>
