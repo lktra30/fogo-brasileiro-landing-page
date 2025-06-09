@@ -20,7 +20,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="text-center">
-            <h4 className="text-xl font-bold mb-6">Quick Links</h4>
+            <h4 className="text-xl font-semibold mb-6">Quick Links</h4>
             <div className="space-y-3">
               <a href="#menu" className="block text-gray-300 hover:text-brand-red transition-colors duration-300">
                 Menu
@@ -39,7 +39,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="text-center md:text-right">
-            <h4 className="text-xl font-bold mb-6">Contact</h4>
+            <h4 className="text-xl font-semibold mb-6">Contact</h4>
             <div className="space-y-3 text-gray-300">
               <p>123 Churrasco Avenue</p>
               <p>Downtown District</p>
@@ -73,7 +73,7 @@ const Footer = () => {
                 className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brand-red transition-all duration-300 transform hover:scale-110"
                 aria-label="TikTok"
               >
-                <span className="text-white font-bold">T</span>
+                <span className="text-white font-semibold">T</span>
               </a>
             </div>
 

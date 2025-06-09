@@ -20,7 +20,7 @@ const Hero = () => {
         <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-white mb-8 animate-fade-in leading-tight tracking-wider drop-shadow-2xl">
           FIRE PIT
         </h1>
-        <p className="text-2xl md:text-3xl lg:text-4xl text-white mb-10 max-w-4xl animate-fade-in opacity-95 font-bold tracking-wide drop-shadow-lg">
+        <p className="text-2xl md:text-3xl lg:text-4xl text-white mb-10 max-w-4xl animate-fade-in opacity-95 font-medium tracking-wide drop-shadow-lg">
           Experience the Authentic Fire & Passion of Brazilian Churrasco
         </p>
         <Button 

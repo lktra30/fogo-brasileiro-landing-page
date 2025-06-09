@@ -41,7 +41,7 @@ const VisitUs = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             {locations.map((location, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg p-8">
-                <h3 className="font-slab text-2xl font-bold text-gray-900 mb-6 text-center">
+                <h3 className="font-slab text-2xl font-semibold text-gray-900 mb-6 text-center">
                   {location.name}
                 </h3>
                 
@@ -51,7 +51,7 @@ const VisitUs = () => {
                       <span className="text-white text-sm">📍</span>
                     </div>
                     <div>
-                      <h4 className="font-slab text-lg font-bold text-gray-900 mb-2">Address</h4>
+                      <h4 className="font-slab text-lg font-semibold text-gray-900 mb-2">Address</h4>
                       <p className="font-sans text-gray-700 whitespace-pre-line">
                         {location.address}
                       </p>
@@ -63,7 +63,7 @@ const VisitUs = () => {
                       <span className="text-white text-sm">📞</span>
                     </div>
                     <div>
-                      <h4 className="font-slab text-lg font-bold text-gray-900 mb-2">Phone</h4>
+                      <h4 className="font-slab text-lg font-semibold text-gray-900 mb-2">Phone</h4>
                       <p className="font-sans text-gray-700">{location.phone}</p>
                     </div>
                   </div>
@@ -73,7 +73,7 @@ const VisitUs = () => {
                       <span className="text-white text-sm">🕐</span>
                     </div>
                     <div>
-                      <h4 className="font-slab text-lg font-bold text-gray-900 mb-2">Hours</h4>
+                      <h4 className="font-slab text-lg font-semibold text-gray-900 mb-2">Hours</h4>
                       <div className="font-sans text-gray-700 space-y-1">
                         {location.hours.map((hour, hourIndex) => (
                           <p key={hourIndex}>{hour}</p>
@@ -83,7 +83,7 @@ const VisitUs = () => {
                   </div>
 
                   <Button 
-                    className="w-full bg-brand-red hover:bg-red-700 text-white font-bold text-lg py-3"
+                    className="w-full bg-brand-red hover:bg-red-700 text-white font-semibold text-lg py-3"
                     size="lg"
                   >
                     GET DIRECTIONS

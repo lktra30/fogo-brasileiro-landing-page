@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Car, DoorOpen, Utensils, Truck } from "lucide-react";
 
@@ -49,14 +50,14 @@ const Promotions = () => {
                   <div className="flex justify-center mb-4">
                     <IconComponent size={64} className="text-white" />
                   </div>
-                  <h3 className="font-slab text-2xl font-bold text-white mb-4">
+                  <h3 className="font-slab text-2xl font-semibold text-white mb-4">
                     {service.name}
                   </h3>
                   <p className="font-sans text-red-200 mb-6">
                     {service.description}
                   </p>
                   <Button 
-                    className="w-full bg-white hover:bg-gray-100 text-black font-bold text-lg py-3 rounded-lg transition-all duration-300"
+                    className="w-full bg-white hover:bg-gray-100 text-black font-semibold text-lg py-3 rounded-lg transition-all duration-300"
                     onClick={() => window.open(service.url, '_blank')}
                   >
                     ORDER NOW
@@ -67,7 +68,7 @@ const Promotions = () => {
           </div>
 
           <div className="bg-white bg-opacity-10 p-8 rounded-lg">
-            <h3 className="font-slab text-2xl font-bold text-white mb-4">
+            <h3 className="font-slab text-2xl font-semibold text-white mb-4">
               Free Delivery on Orders Over $50
             </h3>
             <p className="font-serif text-white text-lg">

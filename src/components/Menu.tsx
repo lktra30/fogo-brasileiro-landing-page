@@ -34,7 +34,7 @@ const Menu = () => {
           <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 tracking-wide drop-shadow-md">
             Menu
           </h2>
-          <p className="text-2xl text-gray-700 max-w-3xl mx-auto font-bold">
+          <p className="text-2xl text-gray-700 max-w-3xl mx-auto font-medium">
             Premium cuts prepared with traditional Brazilian techniques and served with authentic sides
           </p>
         </div>
@@ -54,17 +54,17 @@ const Menu = () => {
                     </div>
                     
                     <div className="p-8 bg-brand-cream">
-                      <h3 className="text-2xl font-bold text-gray-900 mb-4 tracking-wide">
+                      <h3 className="text-2xl font-semibold text-gray-900 mb-4 tracking-wide">
                         {item.name}
                       </h3>
-                      <p className="text-lg text-gray-800 mb-6 leading-relaxed font-semibold">
+                      <p className="text-lg text-gray-800 mb-6 leading-relaxed font-normal">
                         {item.description}
                       </p>
                       <div className="flex justify-center">
                         <Button 
                           variant="outline" 
                           size="lg"
-                          className="border-4 border-black text-black hover:bg-black hover:text-white transition-all duration-300 font-bold text-lg px-8 py-3"
+                          className="border-4 border-black text-black hover:bg-black hover:text-white transition-all duration-300 font-semibold text-lg px-8 py-3"
                         >
                           Order
                         </Button>
