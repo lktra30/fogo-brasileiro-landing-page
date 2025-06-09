@@ -9,10 +9,10 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand Section */}
           <div className="text-center md:text-left">
-            <h3 className="font-slab text-3xl font-bold text-brand-red mb-4">
-              BRASA VIVA
+            <h3 className="text-3xl font-bold text-brand-red mb-4">
+              FIRE PIT
             </h3>
-            <p className="font-serif text-gray-300 leading-relaxed">
+            <p className="text-gray-300 leading-relaxed">
               Authentic Brazilian churrasco experience in the heart of the city. 
               Where tradition meets passion, one perfect cut at a time.
             </p>
@@ -20,18 +20,18 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="text-center">
-            <h4 className="font-slab text-xl font-bold mb-6">Quick Links</h4>
+            <h4 className="text-xl font-bold mb-6">Quick Links</h4>
             <div className="space-y-3">
-              <a href="#menu" className="block font-sans text-gray-300 hover:text-brand-red transition-colors duration-300">
+              <a href="#menu" className="block text-gray-300 hover:text-brand-red transition-colors duration-300">
                 Menu
               </a>
-              <a href="#reservations" className="block font-sans text-gray-300 hover:text-brand-red transition-colors duration-300">
+              <a href="#reservations" className="block text-gray-300 hover:text-brand-red transition-colors duration-300">
                 Reservations
               </a>
-              <a href="#events" className="block font-sans text-gray-300 hover:text-brand-red transition-colors duration-300">
+              <a href="#events" className="block text-gray-300 hover:text-brand-red transition-colors duration-300">
                 Private Events
               </a>
-              <a href="#catering" className="block font-sans text-gray-300 hover:text-brand-red transition-colors duration-300">
+              <a href="#catering" className="block text-gray-300 hover:text-brand-red transition-colors duration-300">
                 Catering
               </a>
             </div>
@@ -39,12 +39,12 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="text-center md:text-right">
-            <h4 className="font-slab text-xl font-bold mb-6">Contact</h4>
-            <div className="space-y-3 font-sans text-gray-300">
+            <h4 className="text-xl font-bold mb-6">Contact</h4>
+            <div className="space-y-3 text-gray-300">
               <p>123 Churrasco Avenue</p>
               <p>Downtown District</p>
               <p>(555) 123-MEAT</p>
-              <p>info@brasaviva.com</p>
+              <p>info@firepit.com</p>
             </div>
           </div>
         </div>
@@ -93,8 +93,8 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="text-center mt-8 pt-6 border-t border-gray-800">
-            <p className="text-gray-400 font-sans">
-              © 2024 Brasa Viva. All rights reserved. | Authentic Brazilian Churrasco Experience
+            <p className="text-gray-400">
+              © 2024 Fire Pit. All rights reserved. | Authentic Brazilian Churrasco Experience
             </p>
           </div>
         </div>

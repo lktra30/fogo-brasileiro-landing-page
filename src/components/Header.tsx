@@ -21,9 +21,9 @@ const Header = () => {
           <div className="flex-shrink-0">
             <button 
               onClick={() => scrollToSection('hero')}
-              className="font-serif text-2xl font-bold text-brand-red hover:text-brand-dark-red transition-colors"
+              className="text-2xl font-bold text-brand-red hover:text-brand-dark-red transition-colors"
             >
-              BRASA VIVA
+              FIRE PIT
             </button>
           </div>
 
@@ -31,25 +31,25 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <button 
               onClick={() => scrollToSection('hero')}
-              className="font-sans text-gray-700 hover:text-brand-red transition-colors font-medium"
+              className="text-gray-700 hover:text-brand-red transition-colors font-medium"
             >
               Home
             </button>
             <button 
               onClick={() => scrollToSection('about')}
-              className="font-sans text-gray-700 hover:text-brand-red transition-colors font-medium"
+              className="text-gray-700 hover:text-brand-red transition-colors font-medium"
             >
               About Us
             </button>
             <button 
               onClick={() => scrollToSection('menu')}
-              className="font-sans text-gray-700 hover:text-brand-red transition-colors font-medium"
+              className="text-gray-700 hover:text-brand-red transition-colors font-medium"
             >
               Menu
             </button>
             <button 
               onClick={() => scrollToSection('visit')}
-              className="font-sans text-gray-700 hover:text-brand-red transition-colors font-medium"
+              className="text-gray-700 hover:text-brand-red transition-colors font-medium"
             >
               Contact
             </button>
@@ -70,25 +70,25 @@ const Header = () => {
             <nav className="flex flex-col space-y-4">
               <button 
                 onClick={() => scrollToSection('hero')}
-                className="font-sans text-gray-700 hover:text-brand-red transition-colors font-medium text-left"
+                className="text-gray-700 hover:text-brand-red transition-colors font-medium text-left"
               >
                 Home
               </button>
               <button 
                 onClick={() => scrollToSection('about')}
-                className="font-sans text-gray-700 hover:text-brand-red transition-colors font-medium text-left"
+                className="text-gray-700 hover:text-brand-red transition-colors font-medium text-left"
               >
                 About Us
               </button>
               <button 
                 onClick={() => scrollToSection('menu')}
-                className="font-sans text-gray-700 hover:text-brand-red transition-colors font-medium text-left"
+                className="text-gray-700 hover:text-brand-red transition-colors font-medium text-left"
               >
                 Menu
               </button>
               <button 
                 onClick={() => scrollToSection('visit')}
-                className="font-sans text-gray-700 hover:text-brand-red transition-colors font-medium text-left"
+                className="text-gray-700 hover:text-brand-red transition-colors font-medium text-left"
               >
                 Contact
               </button>

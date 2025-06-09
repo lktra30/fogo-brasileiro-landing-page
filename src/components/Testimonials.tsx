@@ -42,10 +42,10 @@ const Testimonials = () => {
     <section className="py-20 bg-brand-black">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             O Que Dizem Nossos Clientes
           </h2>
-          <p className="font-sans text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Authentic experiences shared by our valued guests
           </p>
         </div>
@@ -60,15 +60,15 @@ const Testimonials = () => {
                 {renderStars(testimonial.rating)}
               </div>
               
-              <p className="font-serif text-white text-lg mb-6 leading-relaxed italic">
+              <p className="text-white text-lg mb-6 leading-relaxed italic">
                 "{testimonial.review}"
               </p>
               
               <div className="border-t border-gray-700 pt-4">
-                <p className="font-slab text-brand-red font-bold text-lg">
+                <p className="text-brand-red font-bold text-lg">
                   {testimonial.name}
                 </p>
-                <p className="font-sans text-gray-400">
+                <p className="text-gray-400">
                   {testimonial.location}
                 </p>
               </div>

@@ -1,13 +1,13 @@
 
 const About = () => {
   return (
-    <section className="py-24 bg-brand-cream concrete-texture-light relative border-t-4 border-brand-red">
+    <section className="py-24 bg-brand-cream relative border-t-4 border-brand-red">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Decorative line */}
           <div className="w-32 h-2 bg-brand-red mx-auto mb-10 shadow-lg" />
           
-          <h2 className="font-serif text-5xl md:text-6xl font-black text-gray-900 mb-16 text-center tracking-wide drop-shadow-md">
+          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-16 text-center tracking-wide drop-shadow-md">
             Our History
           </h2>
           
@@ -26,19 +26,19 @@ const About = () => {
             {/* Content on the right */}
             <div className="order-1 md:order-2">
               <div className="space-y-8 text-xl leading-relaxed text-gray-800 bg-white p-8 rounded-lg shadow-xl border-l-8 border-brand-red">
-                <p className="font-serif font-bold">
-                  At Brasa Viva, we bring the authentic spirit of Brazilian churrasco to your table. 
+                <p className="font-bold">
+                  At Fire Pit, we bring the authentic spirit of Brazilian churrasco to your table. 
                   Our master grill chefs, trained in the traditional gaucho methods, prepare each cut 
                   with the passion and precision that has been passed down through generations.
                 </p>
                 
-                <p className="font-sans font-semibold">
+                <p className="font-semibold">
                   From the finest picanha to our signature lamb, every piece of meat is seasoned with 
                   our special blend of rock salt and grilled over open flames, creating the perfect 
                   balance of smoky flavor and tender texture that defines true Brazilian barbecue.
                 </p>
                 
-                <p className="font-serif italic text-brand-dark-red font-bold text-2xl">
+                <p className="italic text-brand-dark-red font-bold text-2xl">
                   "More than a meal, it's a celebration of Brazilian culture and the art of fire."
                 </p>
               </div>

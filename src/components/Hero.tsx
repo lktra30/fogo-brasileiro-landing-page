@@ -12,19 +12,19 @@ const Hero = () => {
         }}
       />
       
-      {/* Dark Overlay with texture */}
-      <div className="absolute inset-0 bg-black bg-opacity-70 concrete-texture-dark" />
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-70" />
       
       {/* Content */}
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center pt-16">
-        <h1 className="font-slab text-6xl md:text-8xl lg:text-9xl font-black text-white mb-8 animate-fade-in leading-tight tracking-wider drop-shadow-2xl">
-          BRASA VIVA
+        <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-white mb-8 animate-fade-in leading-tight tracking-wider drop-shadow-2xl">
+          FIRE PIT
         </h1>
-        <p className="font-serif text-2xl md:text-3xl lg:text-4xl text-white mb-10 max-w-4xl animate-fade-in opacity-95 font-bold tracking-wide drop-shadow-lg">
+        <p className="text-2xl md:text-3xl lg:text-4xl text-white mb-10 max-w-4xl animate-fade-in opacity-95 font-bold tracking-wide drop-shadow-lg">
           Experience the Authentic Fire & Passion of Brazilian Churrasco
         </p>
         <Button 
-          className="bg-brand-red hover:bg-red-700 text-white font-black text-xl px-16 py-6 rounded-lg shadow-2xl transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1 border-4 border-red-800"
+          className="bg-brand-red hover:bg-red-700 text-white font-bold text-xl px-16 py-6 rounded-lg shadow-2xl transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1 border-4 border-red-800"
           size="lg"
         >
           RESERVE YOUR TABLE

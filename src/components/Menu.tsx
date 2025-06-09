@@ -28,13 +28,13 @@ const Menu = () => {
   ];
 
   return (
-    <section className="py-24 bg-brand-beige concrete-texture relative border-t-4 border-gray-800">
+    <section className="py-24 bg-brand-beige relative border-t-4 border-gray-800">
       <div className="container mx-auto px-4">
         <div className="text-center mb-20">
-          <h2 className="font-serif text-5xl md:text-6xl font-black text-gray-900 mb-6 tracking-wide drop-shadow-md">
+          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 tracking-wide drop-shadow-md">
             Menu
           </h2>
-          <p className="font-sans text-2xl text-gray-700 max-w-3xl mx-auto font-bold">
+          <p className="text-2xl text-gray-700 max-w-3xl mx-auto font-bold">
             Premium cuts prepared with traditional Brazilian techniques and served with authentic sides
           </p>
         </div>
@@ -53,18 +53,18 @@ const Menu = () => {
                       />
                     </div>
                     
-                    <div className="p-8 bg-brand-cream concrete-texture-light">
-                      <h3 className="font-slab text-2xl font-black text-gray-900 mb-4 tracking-wide">
+                    <div className="p-8 bg-brand-cream">
+                      <h3 className="text-2xl font-bold text-gray-900 mb-4 tracking-wide">
                         {item.name}
                       </h3>
-                      <p className="font-serif text-lg text-gray-800 mb-6 leading-relaxed font-semibold">
+                      <p className="text-lg text-gray-800 mb-6 leading-relaxed font-semibold">
                         {item.description}
                       </p>
                       <div className="flex justify-center">
                         <Button 
                           variant="outline" 
                           size="lg"
-                          className="border-4 border-black text-black hover:bg-black hover:text-white transition-all duration-300 font-black text-lg px-8 py-3"
+                          className="border-4 border-black text-black hover:bg-black hover:text-white transition-all duration-300 font-bold text-lg px-8 py-3"
                         >
                           Order
                         </Button>
@@ -81,7 +81,7 @@ const Menu = () => {
 
         <div className="text-center mt-20">
           <Button 
-            className="bg-brand-red hover:bg-brand-dark-red text-white font-black text-2xl px-16 py-4 rounded-lg shadow-2xl border-4 border-red-800"
+            className="bg-brand-red hover:bg-brand-dark-red text-white font-bold text-2xl px-16 py-4 rounded-lg shadow-2xl border-4 border-red-800"
             size="lg"
           >
             VIEW FULL MENU
