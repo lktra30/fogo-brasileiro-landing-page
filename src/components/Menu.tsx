@@ -28,7 +28,7 @@ const Menu = () => {
   ];
 
   return (
-    <section className="py-24 bg-brand-beige relative border-t-4 border-gray-800">
+    <section className="h-[90vh] bg-brand-beige relative border-t-4 border-gray-800 flex items-center">
       <div className="container mx-auto px-4">
         <div className="text-center mb-20">
           <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 tracking-wide drop-shadow-md">
