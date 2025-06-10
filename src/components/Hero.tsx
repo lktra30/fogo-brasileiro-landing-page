@@ -17,11 +17,11 @@ const Hero = () => {
       
       {/* Content */}
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center pt-16">
-        <div className="mb-8 animate-fade-in">
+        <div className="mb-8 animate-fade-in w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
           <img 
             src="/lovable-uploads/4cd06a21-5648-4101-a069-37ee1a48c689.png" 
             alt="Fire Pit Logo"
-            className="h-40 md:h-60 lg:h-72 w-auto mx-auto drop-shadow-2xl"
+            className="w-full h-full object-cover mx-auto drop-shadow-2xl rounded-lg"
           />
         </div>
         <p className="text-2xl md:text-3xl lg:text-4xl text-white mb-10 max-w-4xl animate-fade-in opacity-95 font-medium tracking-wide drop-shadow-lg">
