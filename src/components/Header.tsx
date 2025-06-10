@@ -21,9 +21,13 @@ const Header = () => {
           <div className="flex-shrink-0">
             <button 
               onClick={() => scrollToSection('hero')}
-              className="text-2xl font-bold text-brand-red hover:text-brand-dark-red transition-colors"
+              className="hover:opacity-80 transition-opacity"
             >
-              FIRE PIT
+              <img 
+                src="/lovable-uploads/4cd06a21-5648-4101-a069-37ee1a48c689.png" 
+                alt="Fire Pit Logo"
+                className="h-10 w-auto"
+              />
             </button>
           </div>
 

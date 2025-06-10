@@ -17,9 +17,13 @@ const Hero = () => {
       
       {/* Content */}
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center pt-16">
-        <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-white mb-8 animate-fade-in leading-tight tracking-wider drop-shadow-2xl">
-          FIRE PIT
-        </h1>
+        <div className="mb-8 animate-fade-in">
+          <img 
+            src="/lovable-uploads/4cd06a21-5648-4101-a069-37ee1a48c689.png" 
+            alt="Fire Pit Logo"
+            className="h-32 md:h-48 lg:h-56 w-auto mx-auto drop-shadow-2xl"
+          />
+        </div>
         <p className="text-2xl md:text-3xl lg:text-4xl text-white mb-10 max-w-4xl animate-fade-in opacity-95 font-medium tracking-wide drop-shadow-lg">
           Experience the Authentic Fire & Passion of Brazilian Churrasco
         </p>

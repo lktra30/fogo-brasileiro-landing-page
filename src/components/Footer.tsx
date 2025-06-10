@@ -9,9 +9,13 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand Section */}
           <div className="text-center md:text-left">
-            <h3 className="text-3xl font-bold text-brand-red mb-4">
-              FIRE PIT
-            </h3>
+            <div className="mb-4">
+              <img 
+                src="/lovable-uploads/4cd06a21-5648-4101-a069-37ee1a48c689.png" 
+                alt="Fire Pit Logo"
+                className="h-12 w-auto mx-auto md:mx-0"
+              />
+            </div>
             <p className="text-gray-300 leading-relaxed">
               Authentic Brazilian churrasco experience in the heart of the city. 
               Where tradition meets passion, one perfect cut at a time.
