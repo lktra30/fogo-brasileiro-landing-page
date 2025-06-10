@@ -16,8 +16,8 @@ const About = () => {
             <div className="order-2 md:order-1">
               <div className="aspect-square overflow-hidden rounded-lg shadow-2xl border-4 border-gray-800">
                 <img 
-                  src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                  alt="Brazilian barbecue"
+                  src="/lovable-uploads/12436d78-3c5d-481e-a0bb-fe557b9cd27a.png" 
+                  alt="Brazilian flags and meat preparation"
                   className="w-full h-full object-cover"
                 />
               </div>
