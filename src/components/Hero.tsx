@@ -21,7 +21,7 @@ const Hero = () => {
           <img 
             src="/lovable-uploads/4cd06a21-5648-4101-a069-37ee1a48c689.png" 
             alt="Fire Pit Logo"
-            className="h-32 md:h-48 lg:h-56 w-auto mx-auto drop-shadow-2xl"
+            className="h-40 md:h-60 lg:h-72 w-auto mx-auto drop-shadow-2xl"
           />
         </div>
         <p className="text-2xl md:text-3xl lg:text-4xl text-white mb-10 max-w-4xl animate-fade-in opacity-95 font-medium tracking-wide drop-shadow-lg">

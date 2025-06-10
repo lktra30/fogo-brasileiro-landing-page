@@ -26,7 +26,7 @@ const Header = () => {
               <img 
                 src="/lovable-uploads/4cd06a21-5648-4101-a069-37ee1a48c689.png" 
                 alt="Fire Pit Logo"
-                className="h-10 w-auto"
+                className="h-14 w-auto"
               />
             </button>
           </div>

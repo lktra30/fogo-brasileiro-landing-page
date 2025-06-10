@@ -13,7 +13,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/4cd06a21-5648-4101-a069-37ee1a48c689.png" 
                 alt="Fire Pit Logo"
-                className="h-12 w-auto mx-auto md:mx-0"
+                className="h-16 w-auto mx-auto md:mx-0"
               />
             </div>
             <p className="text-gray-300 leading-relaxed">
