@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-sm border-b border-gray-700/30 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -35,25 +35,25 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <button 
               onClick={() => scrollToSection('hero')}
-              className="text-gray-700 hover:text-brand-red transition-colors font-medium"
+              className="text-white hover:text-brand-red transition-colors font-medium"
             >
               Home
             </button>
             <button 
               onClick={() => scrollToSection('about')}
-              className="text-gray-700 hover:text-brand-red transition-colors font-medium"
+              className="text-white hover:text-brand-red transition-colors font-medium"
             >
               About Us
             </button>
             <button 
               onClick={() => scrollToSection('menu')}
-              className="text-gray-700 hover:text-brand-red transition-colors font-medium"
+              className="text-white hover:text-brand-red transition-colors font-medium"
             >
               Menu
             </button>
             <button 
               onClick={() => scrollToSection('visit')}
-              className="text-gray-700 hover:text-brand-red transition-colors font-medium"
+              className="text-white hover:text-brand-red transition-colors font-medium"
             >
               Contact
             </button>
@@ -62,7 +62,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 text-gray-700 hover:text-brand-red transition-colors"
+            className="md:hidden p-2 text-white hover:text-brand-red transition-colors"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -70,29 +70,29 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-200">
+          <div className="md:hidden py-4 border-t border-gray-700/30">
             <nav className="flex flex-col space-y-4">
               <button 
                 onClick={() => scrollToSection('hero')}
-                className="text-gray-700 hover:text-brand-red transition-colors font-medium text-left"
+                className="text-white hover:text-brand-red transition-colors font-medium text-left"
               >
                 Home
               </button>
               <button 
                 onClick={() => scrollToSection('about')}
-                className="text-gray-700 hover:text-brand-red transition-colors font-medium text-left"
+                className="text-white hover:text-brand-red transition-colors font-medium text-left"
               >
                 About Us
               </button>
               <button 
                 onClick={() => scrollToSection('menu')}
-                className="text-gray-700 hover:text-brand-red transition-colors font-medium text-left"
+                className="text-white hover:text-brand-red transition-colors font-medium text-left"
               >
                 Menu
               </button>
               <button 
                 onClick={() => scrollToSection('visit')}
-                className="text-gray-700 hover:text-brand-red transition-colors font-medium text-left"
+                className="text-white hover:text-brand-red transition-colors font-medium text-left"
               >
                 Contact
               </button>
