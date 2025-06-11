@@ -2,23 +2,27 @@
 import { Button } from "@/components/ui/button";
 import { Car, DoorOpen, Utensils, Truck } from "lucide-react";
 
+import { SiUbereats, SiDoordash } from "react-icons/si";
+import { RiBreadLine } from "react-icons/ri";
+
+
 const Promotions = () => {
   const deliveryServices = [
     {
       name: "Uber Eats",
-      icon: Car,
+      icon: SiUbereats,
       url: "https://www.ubereats.com",
       description: "Fast delivery in 30-45 minutes"
     },
     {
       name: "DoorDash",
-      icon: DoorOpen,
+      icon: SiDoordash,
       url: "https://www.doordash.com",
       description: "Reliable delivery service"
     },
     {
       name: "Toast",
-      icon: Utensils,
+      icon: RiBreadLine,
       url: "https://pos.toasttab.com",
       description: "Order directly from our kitchen"
     }
@@ -48,7 +52,7 @@ const Promotions = () => {
               return (
                 <div key={index} className="bg-black bg-opacity-30 p-8 rounded-lg border border-red-300">
                   <div className="flex justify-center mb-4">
-                    <IconComponent size={64} className="text-white" />
+                    <IconComponent size={64} color="white" />
                   </div>
                   <h3 className="font-slab text-2xl font-semibold text-white mb-4">
                     {service.name}
@@ -67,14 +71,14 @@ const Promotions = () => {
             })}
           </div>
 
-          <div className="bg-white bg-opacity-10 p-8 rounded-lg">
+          {/* <div className="bg-white bg-opacity-10 p-8 rounded-lg">
             <h3 className="font-slab text-2xl font-semibold text-white mb-4">
               Free Delivery on Orders Over $50
             </h3>
             <p className="font-serif text-white text-lg">
               Get your favorite Brazilian dishes delivered fresh and hot to your door
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

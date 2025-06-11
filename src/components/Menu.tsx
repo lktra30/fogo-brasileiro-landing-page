@@ -12,18 +12,18 @@ const Menu = () => {
   const menuItems = [
     {
       name: "Picanha Premium",
-      description: "The crown jewel of Brazilian barbecue, seasoned with rock salt and grilled to perfection",
-      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      description: "The crown jewel of Brazilian barbecue, top sirloin cap grilled to perfection",
+      image: "/lovable-uploads/picanha.jpeg"
     },
     {
-      name: "Cordeiro Especial",
-      description: "Tender lamb marinated in herbs and slow-roasted over open coals",
-      image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      name: "Brazilian Bowl",
+      description: "Pack of flavor; White rice, savory beans, potato salad, farofa, vinaigrette salad, and your meat choice",
+      image: "/lovable-uploads/br-bowl.jpeg"
     },
     {
-      name: "Costela Defumada",
-      description: "Smoked beef ribs with our signature dry rub, fall-off-the-bone tender",
-      image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      name: "On the Bun",
+      description: "8 inches italian sub bun with 4 flavorful toppings and your meat choice, perfect for a quick bite",
+      image: "/lovable-uploads/on-the-bun.jpeg"
     }
   ];
 

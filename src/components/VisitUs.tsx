@@ -1,27 +1,25 @@
-
 import { Button } from "@/components/ui/button";
 
 const VisitUs = () => {
   const locations = [
     {
-      name: "Downtown Location",
-      address: "123 Churrasco Avenue\nDowntown District\nCity, State 12345",
-      phone: "(555) 123-MEAT",
+      name: "Solaire Social Food Hall",
+      address: "SOLAIRE SOCIAL FOOD HALL \n 8200 Dixon Ave - Silver Spring, MD 20910",
+      phone: "(240) 579-0308",
       hours: [
-        "Monday - Thursday: 5:00 PM - 10:00 PM",
-        "Friday - Saturday: 5:00 PM - 11:00 PM",
-        "Sunday: 4:00 PM - 9:00 PM"
-      ]
+        "Sunday - Thursday: 11:00 AM - 9:00 PM",
+        "Friday - Saturday: 11:00 AM - 10:00 PM",
+      ],
+      backgroundImage: "/lovable-uploads/solaire-loc.jpeg"
     },
     {
-      name: "Westside Location",
-      address: "456 Brazilian Way\nWestside Plaza\nCity, State 12346",
-      phone: "(555) 456-GRILL",
+      name: "Food-Truck Location",
+      address: "Golden Arcade Shopping Center \n 804 Rockville Pike - Rockville, MD 20852",
+      phone: "(301) 789-8709",
       hours: [
-        "Monday - Thursday: 4:00 PM - 10:00 PM",
-        "Friday - Saturday: 4:00 PM - 11:00 PM",
-        "Sunday: 3:00 PM - 9:00 PM"
-      ]
+        "Tuesday - Saturday: 11:00 AM - 7:30 PM"
+      ],
+      backgroundImage: "/lovable-uploads/foodtruck-loc.jpg"
     }
   ];
 
@@ -34,60 +32,77 @@ const VisitUs = () => {
               Our Locations
             </h2>
             <p className="font-sans text-xl text-gray-600">
-              Find us in the heart of the city, where authentic Brazilian flavors await
+              Find us the authentic Brazilian restaurant and food truck near you
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
             {locations.map((location, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg p-8">
-                <h3 className="font-slab text-2xl font-semibold text-gray-900 mb-6 text-center">
-                  {location.name}
-                </h3>
+              <div 
+                key={index} 
+                className="rounded-lg shadow-xl overflow-hidden relative h-[600px]"
+              >
+                {/* Imagem como componente principal */}
+                <div 
+                  className="absolute inset-0 w-full h-full bg-cover bg-center"
+                  style={{
+                    backgroundImage: location.backgroundImage ? `url(${location.backgroundImage})` : 'none'
+                  }}
+                />
                 
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
-                      <span className="text-white text-sm">📍</span>
-                    </div>
-                    <div>
-                      <h4 className="font-slab text-lg font-semibold text-gray-900 mb-2">Address</h4>
-                      <p className="font-sans text-gray-700 whitespace-pre-line">
-                        {location.address}
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
-                      <span className="text-white text-sm">📞</span>
-                    </div>
-                    <div>
-                      <h4 className="font-slab text-lg font-semibold text-gray-900 mb-2">Phone</h4>
-                      <p className="font-sans text-gray-700">{location.phone}</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
-                      <span className="text-white text-sm">🕐</span>
-                    </div>
-                    <div>
-                      <h4 className="font-slab text-lg font-semibold text-gray-900 mb-2">Hours</h4>
-                      <div className="font-sans text-gray-700 space-y-1">
-                        {location.hours.map((hour, hourIndex) => (
-                          <p key={hourIndex}>{hour}</p>
-                        ))}
+                {/* Título no topo */}
+                <div className="absolute top-0 left-0 right-0 p-4 bg-black bg-opacity-50">
+                  <h3 className="font-slab text-2xl font-semibold text-white mb-0 text-center">
+                    {location.name}
+                  </h3>
+                </div>
+                
+                {/* Box de texto na parte inferior */}
+                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 p-6">
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-4">
+                      <div className="w-8 h-8 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
+                        <span className="text-white text-sm">📍</span>
+                      </div>
+                      <div>
+                        <h4 className="font-slab text-lg font-semibold text-white mb-1">Address</h4>
+                        <p className="font-sans text-gray-200 whitespace-pre-line">
+                          {location.address}
+                        </p>
                       </div>
                     </div>
-                  </div>
 
-                  <Button 
-                    className="w-full bg-brand-red hover:bg-red-700 text-white font-semibold text-lg py-3"
-                    size="lg"
-                  >
-                    GET DIRECTIONS
-                  </Button>
+                    <div className="flex items-start gap-4">
+                      <div className="w-8 h-8 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
+                        <span className="text-white text-sm">📞</span>
+                      </div>
+                      <div>
+                        <h4 className="font-slab text-lg font-semibold text-white mb-1">Phone</h4>
+                        <p className="font-sans text-gray-200">{location.phone}</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-4">
+                      <div className="w-8 h-8 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
+                        <span className="text-white text-sm">🕐</span>
+                      </div>
+                      <div>
+                        <h4 className="font-slab text-lg font-semibold text-white mb-1">Hours</h4>
+                        <div className="font-sans text-gray-200 space-y-1">
+                          {location.hours.map((hour, hourIndex) => (
+                            <p key={hourIndex}>{hour}</p>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* <Button 
+                      className="w-full bg-brand-red hover:bg-red-700 text-white font-semibold text-lg py-3"
+                      size="lg"
+                    >
+                      GET DIRECTIONS
+                    </Button> */}
+                  </div>
                 </div>
               </div>
             ))}

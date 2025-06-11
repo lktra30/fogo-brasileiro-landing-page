@@ -27,19 +27,15 @@ const About = () => {
             <div className="order-1 md:order-2">
               <div className="space-y-8 text-xl leading-relaxed text-gray-800 bg-white p-8 rounded-lg shadow-xl border-l-8 border-brand-red">
                 <p className="font-medium">
-                  At Fire Pit, we bring the authentic spirit of Brazilian churrasco to your table. 
-                  Our master grill chefs, trained in the traditional gaucho methods, prepare each cut 
-                  with the passion and precision that has been passed down through generations.
+                At Fire Pit, we are a Brazilian family from Southern Brazil bringing the authentic spirit of Brazilian churrasco and traditional family values. Our grill chefs, trained in traditional gaucho methods, prepare each cut with passion and precision passed down through generations.
                 </p>
                 
                 <p className="font-normal">
-                  From the finest picanha to our signature lamb, every piece of meat is seasoned with 
-                  our special blend of rock salt and grilled over open flames, creating the perfect 
-                  balance of smoky flavor and tender texture that defines true Brazilian barbecue.
+                  From the finest picanha to our signature lamb, every piece of meat is seasoned with our special blend of rock salt and grilled over open flames, creating the perfect balance of smoky flavor and tender texture that defines true Brazilian barbecue.
                 </p>
                 
                 <p className="italic text-brand-dark-red font-semibold text-2xl">
-                  "More than a meal, it's a celebration of Brazilian culture and the art of fire."
+                  "We bring the heart of Southern Brazil to our community through authentic Brazilian barbecue at affordable prices."
                 </p>
               </div>
             </div>

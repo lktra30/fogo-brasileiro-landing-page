@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -14,14 +13,14 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-sm border-b border-gray-700/30 shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-black/40 backdrop-blur-sm border-b border-gray-700/30 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <button 
               onClick={() => scrollToSection('hero')}
-              className="hover:opacity-80 transition-opacity w-16 h-14"
+              className="hover:opacity-80 transition-opacity w-40 h-32"
             >
               <img 
                 src="/lovable-uploads/4cd06a21-5648-4101-a069-37ee1a48c689.png" 

@@ -1,9 +1,8 @@
-
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative h-[92vh] w-full overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -17,14 +16,14 @@ const Hero = () => {
       
       {/* Content */}
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center pt-16">
-        <div className="mb-8 animate-fade-in w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+        <div className="animate-fade-in w-full min-w-[1000px] max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
           <img 
             src="/lovable-uploads/4cd06a21-5648-4101-a069-37ee1a48c689.png" 
             alt="Fire Pit Logo"
-            className="w-full h-full object-cover mx-auto drop-shadow-2xl rounded-lg"
+            className="w-full h-auto object-cover mx-auto drop-shadow-2xl rounded-lg"
           />
         </div>
-        <p className="text-2xl md:text-3xl lg:text-4xl text-white mb-10 max-w-4xl animate-fade-in opacity-95 font-medium tracking-wide drop-shadow-lg">
+        <p className="text-2xl md:text-3xl lg:text-4xl text-white mb-5 max-w-4xl animate-fade-in opacity-95 font-medium tracking-wide drop-shadow-lg">
           Experience the Authentic Fire & Passion of Brazilian Churrasco
         </p>
         <Button 
@@ -36,11 +35,11 @@ const Hero = () => {
       </div>
       
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
         <div className="w-8 h-12 border-4 border-white rounded-full flex justify-center shadow-lg">
           <div className="w-2 h-4 bg-white rounded-full mt-3 animate-pulse" />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
