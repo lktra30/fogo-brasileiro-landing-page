@@ -45,8 +45,8 @@ const Footer = () => {
             <h4 className="text-xl font-semibold mb-6">Contact</h4>
             <div className="space-y-3 text-gray-300">
               <p>8200 Dixon Ave - Silver Spring, MD 20910</p>
-              <p>(240) 579-0308</ p>
-              <div className="bg-red-500 w-full h-1" />
+              <p>(240) 579-0308</p>
+              <div className="bg-brand-red w-full h-1" />
               <p>804 Rockville Pike - Rockville, MD 20852</p>
               <p>(301) 789-8709</p>
             </div>
