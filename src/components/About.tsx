@@ -7,7 +7,7 @@ const About = () => {
           {/* Decorative line */}
           <div className="w-32 h-2 bg-brand-red mx-auto mb-10 shadow-lg" />
           
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-16 text-center tracking-wide drop-shadow-md font-rustic">
+          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-16 text-center tracking-wide drop-shadow-md">
             Our History
           </h2>
           
@@ -26,15 +26,15 @@ const About = () => {
             {/* Content on the right */}
             <div className="order-1 md:order-2">
               <div className="space-y-8 text-xl leading-relaxed text-gray-800 bg-white p-8 rounded-lg shadow-xl border-l-8 border-brand-red">
-                <p className="font-medium font-body">
+                <p className="font-medium">
                 At Fire Pit, we are a Brazilian family from Southern Brazil bringing the authentic spirit of Brazilian churrasco and traditional family values. Our grill chefs, trained in traditional gaucho methods, prepare each cut with passion and precision passed down through generations.
                 </p>
                 
-                <p className="font-normal font-body">
+                <p className="font-normal">
                   From the finest picanha to our signature lamb, every piece of meat is seasoned with our special blend of rock salt and grilled over open flames, creating the perfect balance of smoky flavor and tender texture that defines true Brazilian barbecue.
                 </p>
                 
-                <p className="italic text-brand-dark-red font-semibold text-2xl font-body">
+                <p className="italic text-brand-dark-red font-semibold text-2xl">
                   "We bring the heart of Southern Brazil to our community through authentic Brazilian barbecue at affordable prices."
                 </p>
               </div>

@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -35,25 +34,25 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <button 
               onClick={() => scrollToSection('hero')}
-              className="text-white hover:text-brand-red transition-colors font-medium font-body"
+              className="text-white hover:text-brand-red transition-colors font-medium"
             >
               Home
             </button>
             <button 
               onClick={() => scrollToSection('about')}
-              className="text-white hover:text-brand-red transition-colors font-medium font-body"
+              className="text-white hover:text-brand-red transition-colors font-medium"
             >
               About Us
             </button>
             <button 
               onClick={() => scrollToSection('menu')}
-              className="text-white hover:text-brand-red transition-colors font-medium font-body"
+              className="text-white hover:text-brand-red transition-colors font-medium"
             >
               Menu
             </button>
             <button 
               onClick={() => scrollToSection('visit')}
-              className="text-white hover:text-brand-red transition-colors font-medium font-body"
+              className="text-white hover:text-brand-red transition-colors font-medium"
             >
               Contact
             </button>
@@ -74,25 +73,25 @@ const Header = () => {
             <nav className="flex flex-col space-y-4">
               <button 
                 onClick={() => scrollToSection('hero')}
-                className="text-white hover:text-brand-red transition-colors font-medium text-left font-body"
+                className="text-white hover:text-brand-red transition-colors font-medium text-left"
               >
                 Home
               </button>
               <button 
                 onClick={() => scrollToSection('about')}
-                className="text-white hover:text-brand-red transition-colors font-medium text-left font-body"
+                className="text-white hover:text-brand-red transition-colors font-medium text-left"
               >
                 About Us
               </button>
               <button 
                 onClick={() => scrollToSection('menu')}
-                className="text-white hover:text-brand-red transition-colors font-medium text-left font-body"
+                className="text-white hover:text-brand-red transition-colors font-medium text-left"
               >
                 Menu
               </button>
               <button 
                 onClick={() => scrollToSection('visit')}
-                className="text-white hover:text-brand-red transition-colors font-medium text-left font-body"
+                className="text-white hover:text-brand-red transition-colors font-medium text-left"
               >
                 Contact
               </button>
