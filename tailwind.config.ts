@@ -68,10 +68,13 @@ export default {
 				'brand-dark-red': '#7A1E1E',
 				'brand-cream': '#FAF8F5',
 				'brand-beige': '#F5F5F0',
-				'brand-black': '#000000'
+				'brand-black': '#000000',
+				'brand-charcoal': '#2C2C2C',
+				'brand-graphite': '#1A1A1A'
 			},
 			fontFamily: {
-				'sans': ['Special Elite', 'monospace'],
+				'rustic': ['Special Elite', 'monospace'],
+				'body': ['Open Sans', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

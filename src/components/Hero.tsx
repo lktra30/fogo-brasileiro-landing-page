@@ -1,8 +1,9 @@
+
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative h-[92vh] w-full overflow-hidden">
+    <section className="relative h-[92vh] w-full overflow-hidden bg-brand-graphite">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -23,23 +24,16 @@ const Hero = () => {
             className="w-full h-auto object-cover mx-auto drop-shadow-2xl rounded-lg"
           />
         </div>
-        <p className="text-2xl md:text-3xl lg:text-4xl text-white mb-5 max-w-4xl animate-fade-in opacity-95 font-medium tracking-wide drop-shadow-lg">
+        <p className="text-2xl md:text-3xl lg:text-4xl text-white mb-5 max-w-4xl animate-fade-in opacity-95 font-body font-medium tracking-wide drop-shadow-lg">
           Experience the Authentic Fire & Passion of Brazilian Churrasco
         </p>
         <Button 
-          className="bg-brand-red hover:bg-red-700 text-white font-bold text-xl px-16 py-6 rounded-lg shadow-2xl transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1 border-4 border-red-800"
+          className="bg-brand-red hover:bg-red-700 text-white font-bold text-xl px-16 py-6 rounded-lg shadow-2xl transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1 border-4 border-red-800 font-body"
           size="lg"
         >
           RESERVE YOUR TABLE
         </Button>
       </div>
-      
-      {/* Scroll indicator */}
-      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
-        <div className="w-8 h-12 border-4 border-white rounded-full flex justify-center shadow-lg">
-          <div className="w-2 h-4 bg-white rounded-full mt-3 animate-pulse" />
-        </div>
-      </div> */}
     </section>
   );
 };

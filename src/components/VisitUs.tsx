@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 
 const VisitUs = () => {
@@ -24,14 +25,14 @@ const VisitUs = () => {
   ];
 
   return (
-    <section className="py-20 bg-brand-beige">
+    <section className="py-20 bg-brand-graphite">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-rustic">
               Our Locations
             </h2>
-            <p className="font-sans text-xl text-gray-600">
+            <p className="text-xl text-gray-300 font-body">
               Find us the authentic Brazilian restaurant and food truck near you
             </p>
           </div>
@@ -40,7 +41,7 @@ const VisitUs = () => {
             {locations.map((location, index) => (
               <div 
                 key={index} 
-                className="rounded-lg shadow-xl overflow-hidden relative h-[600px]"
+                className="rounded-lg shadow-xl overflow-hidden relative h-[600px] border-2 border-gray-600"
               >
                 {/* Imagem como componente principal */}
                 <div 
@@ -51,22 +52,22 @@ const VisitUs = () => {
                 />
                 
                 {/* Título no topo */}
-                <div className="absolute top-0 left-0 right-0 p-4 bg-black bg-opacity-50">
-                  <h3 className="font-slab text-2xl font-semibold text-white mb-0 text-center">
+                <div className="absolute top-0 left-0 right-0 p-4 bg-black bg-opacity-70">
+                  <h3 className="text-2xl font-semibold text-white mb-0 text-center font-rustic">
                     {location.name}
                   </h3>
                 </div>
                 
                 {/* Box de texto na parte inferior */}
-                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 p-6">
+                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-80 p-6">
                   <div className="space-y-4">
                     <div className="flex items-start gap-4">
                       <div className="w-8 h-8 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
                         <span className="text-white text-sm">📍</span>
                       </div>
                       <div>
-                        <h4 className="font-slab text-lg font-semibold text-white mb-1">Address</h4>
-                        <p className="font-sans text-gray-200 whitespace-pre-line">
+                        <h4 className="text-lg font-semibold text-white mb-1 font-rustic">Address</h4>
+                        <p className="text-gray-200 whitespace-pre-line font-body">
                           {location.address}
                         </p>
                       </div>
@@ -77,8 +78,8 @@ const VisitUs = () => {
                         <span className="text-white text-sm">📞</span>
                       </div>
                       <div>
-                        <h4 className="font-slab text-lg font-semibold text-white mb-1">Phone</h4>
-                        <p className="font-sans text-gray-200">{location.phone}</p>
+                        <h4 className="text-lg font-semibold text-white mb-1 font-rustic">Phone</h4>
+                        <p className="text-gray-200 font-body">{location.phone}</p>
                       </div>
                     </div>
 
@@ -87,21 +88,14 @@ const VisitUs = () => {
                         <span className="text-white text-sm">🕐</span>
                       </div>
                       <div>
-                        <h4 className="font-slab text-lg font-semibold text-white mb-1">Hours</h4>
-                        <div className="font-sans text-gray-200 space-y-1">
+                        <h4 className="text-lg font-semibold text-white mb-1 font-rustic">Hours</h4>
+                        <div className="text-gray-200 space-y-1 font-body">
                           {location.hours.map((hour, hourIndex) => (
                             <p key={hourIndex}>{hour}</p>
                           ))}
                         </div>
                       </div>
                     </div>
-
-                    {/* <Button 
-                      className="w-full bg-brand-red hover:bg-red-700 text-white font-semibold text-lg py-3"
-                      size="lg"
-                    >
-                      GET DIRECTIONS
-                    </Button> */}
                   </div>
                 </div>
               </div>
