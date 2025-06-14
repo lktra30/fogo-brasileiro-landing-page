@@ -24,7 +24,7 @@ const Hero = () => {
             className="w-full h-auto object-cover mx-auto drop-shadow-2xl rounded-lg"
           />
         </div>
-        <p className="font-body text-2xl md:text-3xl lg:text-4xl text-white mb-5 max-w-4xl animate-fade-in opacity-95 font-medium tracking-wide drop-shadow-lg">
+        <p className="font-display text-2xl md:text-3xl lg:text-4xl text-white mb-5 max-w-4xl animate-fade-in opacity-95 font-medium tracking-wide drop-shadow-lg">
           Experience the Authentic Fire & Passion of Brazilian Churrasco
         </p>
         <Button 
