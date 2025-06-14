@@ -39,10 +39,10 @@ const Promotions = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-white mb-8">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-8">
             Delivery
           </h2>
-          <p className="font-serif text-xl text-white mb-12 opacity-90">
+          <p className="font-body text-xl text-white mb-12 opacity-90">
             Enjoy our authentic Brazilian churrasco from the comfort of your home
           </p>
           
@@ -54,14 +54,14 @@ const Promotions = () => {
                   <div className="flex justify-center mb-4">
                     <IconComponent size={64} color="white" />
                   </div>
-                  <h3 className="font-slab text-2xl font-semibold text-white mb-4">
+                  <h3 className="font-display text-2xl font-semibold text-white mb-4">
                     {service.name}
                   </h3>
-                  <p className="font-sans text-red-200 mb-6">
+                  <p className="font-body text-red-200 mb-6">
                     {service.description}
                   </p>
                   <Button 
-                    className="w-full bg-white hover:bg-gray-100 text-black font-semibold text-lg py-3 rounded-lg transition-all duration-300"
+                    className="font-body w-full bg-white hover:bg-gray-100 text-black font-semibold text-lg py-3 rounded-lg transition-all duration-300"
                     onClick={() => window.open(service.url, '_blank')}
                   >
                     ORDER NOW
@@ -70,15 +70,6 @@ const Promotions = () => {
               );
             })}
           </div>
-
-          {/* <div className="bg-white bg-opacity-10 p-8 rounded-lg">
-            <h3 className="font-slab text-2xl font-semibold text-white mb-4">
-              Free Delivery on Orders Over $50
-            </h3>
-            <p className="font-serif text-white text-lg">
-              Get your favorite Brazilian dishes delivered fresh and hot to your door
-            </p>
-          </div> */}
         </div>
       </div>
     </section>

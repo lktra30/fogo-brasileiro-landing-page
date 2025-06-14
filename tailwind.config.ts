@@ -71,7 +71,9 @@ export default {
 				'brand-black': '#000000'
 			},
 			fontFamily: {
-				'sans': ['Special Elite', 'monospace'],
+				'sans': ['Inter', 'system-ui', 'sans-serif'],
+				'display': ['Special Elite', 'monospace'],
+				'body': ['Inter', 'system-ui', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 
 const VisitUs = () => {
@@ -28,10 +29,10 @@ const VisitUs = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Our Locations
             </h2>
-            <p className="font-sans text-xl text-gray-600">
+            <p className="font-body text-xl text-gray-600">
               Find us the authentic Brazilian restaurant and food truck near you
             </p>
           </div>
@@ -52,7 +53,7 @@ const VisitUs = () => {
                 
                 {/* Título no topo */}
                 <div className="absolute top-0 left-0 right-0 p-4 bg-black bg-opacity-50">
-                  <h3 className="font-slab text-2xl font-semibold text-white mb-0 text-center">
+                  <h3 className="font-display text-2xl font-semibold text-white mb-0 text-center">
                     {location.name}
                   </h3>
                 </div>
@@ -65,8 +66,8 @@ const VisitUs = () => {
                         <span className="text-white text-sm">📍</span>
                       </div>
                       <div>
-                        <h4 className="font-slab text-lg font-semibold text-white mb-1">Address</h4>
-                        <p className="font-sans text-gray-200 whitespace-pre-line">
+                        <h4 className="font-display text-lg font-semibold text-white mb-1">Address</h4>
+                        <p className="font-body text-gray-200 whitespace-pre-line">
                           {location.address}
                         </p>
                       </div>
@@ -77,8 +78,8 @@ const VisitUs = () => {
                         <span className="text-white text-sm">📞</span>
                       </div>
                       <div>
-                        <h4 className="font-slab text-lg font-semibold text-white mb-1">Phone</h4>
-                        <p className="font-sans text-gray-200">{location.phone}</p>
+                        <h4 className="font-display text-lg font-semibold text-white mb-1">Phone</h4>
+                        <p className="font-body text-gray-200">{location.phone}</p>
                       </div>
                     </div>
 
@@ -87,21 +88,14 @@ const VisitUs = () => {
                         <span className="text-white text-sm">🕐</span>
                       </div>
                       <div>
-                        <h4 className="font-slab text-lg font-semibold text-white mb-1">Hours</h4>
-                        <div className="font-sans text-gray-200 space-y-1">
+                        <h4 className="font-display text-lg font-semibold text-white mb-1">Hours</h4>
+                        <div className="font-body text-gray-200 space-y-1">
                           {location.hours.map((hour, hourIndex) => (
                             <p key={hourIndex}>{hour}</p>
                           ))}
                         </div>
                       </div>
                     </div>
-
-                    {/* <Button 
-                      className="w-full bg-brand-red hover:bg-red-700 text-white font-semibold text-lg py-3"
-                      size="lg"
-                    >
-                      GET DIRECTIONS
-                    </Button> */}
                   </div>
                 </div>
               </div>
