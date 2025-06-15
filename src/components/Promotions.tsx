@@ -29,7 +29,15 @@ const Promotions = () => {
   ];
 
   return (
-    <section className="py-20 bg-brand-dark-red concrete-texture-dark relative overflow-hidden">
+    <section className="py-20 bg-gray-800 relative overflow-hidden" style={{
+      backgroundImage: `
+        radial-gradient(circle at 20% 50%, rgba(0, 0, 0, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(0, 0, 0, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 40% 80%, rgba(0, 0, 0, 0.3) 0%, transparent 50%),
+        linear-gradient(135deg, #4a4a4a 0%, #2d2d2d 50%, #1a1a1a 100%)
+      `,
+      backgroundSize: '100% 100%, 100% 100%, 100% 100%, 100% 100%'
+    }}>
       {/* Background watermark */}
       <div className="absolute inset-0 opacity-5">
         <div className="w-full h-full flex items-center justify-center">
@@ -50,18 +58,18 @@ const Promotions = () => {
             {deliveryServices.map((service, index) => {
               const IconComponent = service.icon;
               return (
-                <div key={index} className="bg-black bg-opacity-30 p-8 rounded-lg border border-red-300">
+                <div key={index} className="bg-black bg-opacity-30 p-8 rounded-lg border border-gray-600">
                   <div className="flex justify-center mb-4">
                     <IconComponent size={64} color="white" />
                   </div>
                   <h3 className="font-display text-2xl font-semibold text-white mb-4">
                     {service.name}
                   </h3>
-                  <p className="font-body text-red-200 mb-6">
+                  <p className="font-body text-gray-300 mb-6">
                     {service.description}
                   </p>
                   <Button 
-                    className="font-body w-full bg-white hover:bg-gray-100 text-black font-semibold text-lg py-3 rounded-lg transition-all duration-300"
+                    className="font-body w-full bg-brand-red hover:bg-brand-dark-red text-white font-semibold text-lg py-3 rounded-lg transition-all duration-300 border-2 border-red-800"
                     onClick={() => window.open(service.url, '_blank')}
                   >
                     ORDER NOW
@@ -72,6 +80,9 @@ const Promotions = () => {
           </div>
         </div>
       </div>
+      
+      {/* Divisor */}
+      <div className="w-32 h-2 bg-gray-800 mx-auto mt-16 shadow-lg" />
     </section>
   );
 };

@@ -43,7 +43,6 @@ const VisitUs = () => {
                 key={index} 
                 className="rounded-lg shadow-xl overflow-hidden relative h-[600px]"
               >
-                {/* Imagem como componente principal */}
                 <div 
                   className="absolute inset-0 w-full h-full bg-cover bg-center"
                   style={{
@@ -51,14 +50,12 @@ const VisitUs = () => {
                   }}
                 />
                 
-                {/* Título no topo */}
                 <div className="absolute top-0 left-0 right-0 p-4 bg-black bg-opacity-50">
                   <h3 className="font-display text-2xl font-semibold text-white mb-0 text-center">
                     {location.name}
                   </h3>
                 </div>
                 
-                {/* Box de texto na parte inferior */}
                 <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 p-6">
                   <div className="space-y-4">
                     <div className="flex items-start gap-4">
@@ -103,6 +100,9 @@ const VisitUs = () => {
           </div>
         </div>
       </div>
+      
+      {/* Divisor */}
+      <div className="w-32 h-2 bg-gray-800 mx-auto mt-16 shadow-lg" />
     </section>
   );
 };

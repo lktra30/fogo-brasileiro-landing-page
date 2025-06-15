@@ -12,8 +12,8 @@ const About = () => {
           </h2>
           
           <div className="grid md:grid-cols-2 gap-16 items-center">
-            {/* Image on the left */}
-            <div className="order-2 md:order-1">
+            {/* Image on the left - hidden on mobile */}
+            <div className="order-2 md:order-1 hidden md:block">
               <div className="aspect-square overflow-hidden rounded-lg shadow-2xl border-4 border-gray-800">
                 <img 
                   src="/lovable-uploads/12436d78-3c5d-481e-a0bb-fe557b9cd27a.png" 

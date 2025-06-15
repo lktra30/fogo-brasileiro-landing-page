@@ -60,15 +60,6 @@ const Menu = () => {
                       <p className="font-body text-lg text-gray-800 mb-6 leading-relaxed font-normal">
                         {item.description}
                       </p>
-                      <div className="flex justify-center">
-                        <Button 
-                          variant="outline" 
-                          size="lg"
-                          className="font-body border-4 border-black text-black hover:bg-black hover:text-white transition-all duration-300 font-semibold text-lg px-8 py-3"
-                        >
-                          Order
-                        </Button>
-                      </div>
                     </div>
                   </div>
                 </CarouselItem>
@@ -88,6 +79,9 @@ const Menu = () => {
           </Button>
         </div>
       </div>
+      
+      {/* Divisor */}
+      <div className="w-32 h-2 bg-gray-800 mx-auto mt-16 shadow-lg" />
     </section>
   );
 };
