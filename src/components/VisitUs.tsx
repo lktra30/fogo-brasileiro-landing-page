@@ -41,30 +41,32 @@ const VisitUs = () => {
             {locations.map((location, index) => (
               <div 
                 key={index} 
-                className="rounded-lg shadow-xl overflow-hidden relative h-[600px]"
+                className="rounded-lg shadow-xl overflow-hidden bg-white"
               >
-                <div 
-                  className="absolute inset-0 w-full h-full bg-cover bg-center"
-                  style={{
-                    backgroundImage: location.backgroundImage ? `url(${location.backgroundImage})` : 'none'
-                  }}
-                />
-                
-                <div className="absolute top-0 left-0 right-0 p-4 bg-black bg-opacity-50">
-                  <h3 className="font-display text-2xl font-semibold text-white mb-0 text-center">
-                    {location.name}
-                  </h3>
+                {/* Image Section */}
+                <div className="h-64 relative">
+                  <div 
+                    className="absolute inset-0 w-full h-full bg-cover bg-center"
+                    style={{
+                      backgroundImage: location.backgroundImage ? `url(${location.backgroundImage})` : 'none'
+                    }}
+                  />
                 </div>
                 
-                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 p-6">
+                {/* Content Section */}
+                <div className="p-6 bg-white">
+                  <h3 className="font-display text-2xl font-semibold text-gray-900 mb-6 text-center">
+                    {location.name}
+                  </h3>
+                  
                   <div className="space-y-4">
                     <div className="flex items-start gap-4">
                       <div className="w-8 h-8 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
                         <span className="text-white text-sm">📍</span>
                       </div>
                       <div>
-                        <h4 className="font-display text-lg font-semibold text-white mb-1">Address</h4>
-                        <p className="font-body text-gray-200 whitespace-pre-line">
+                        <h4 className="font-display text-lg font-semibold text-gray-900 mb-1">Address</h4>
+                        <p className="font-body text-gray-700 whitespace-pre-line">
                           {location.address}
                         </p>
                       </div>
@@ -75,8 +77,8 @@ const VisitUs = () => {
                         <span className="text-white text-sm">📞</span>
                       </div>
                       <div>
-                        <h4 className="font-display text-lg font-semibold text-white mb-1">Phone</h4>
-                        <p className="font-body text-gray-200">{location.phone}</p>
+                        <h4 className="font-display text-lg font-semibold text-gray-900 mb-1">Phone</h4>
+                        <p className="font-body text-gray-700">{location.phone}</p>
                       </div>
                     </div>
 
@@ -85,8 +87,8 @@ const VisitUs = () => {
                         <span className="text-white text-sm">🕐</span>
                       </div>
                       <div>
-                        <h4 className="font-display text-lg font-semibold text-white mb-1">Hours</h4>
-                        <div className="font-body text-gray-200 space-y-1">
+                        <h4 className="font-display text-lg font-semibold text-gray-900 mb-1">Hours</h4>
+                        <div className="font-body text-gray-700 space-y-1">
                           {location.hours.map((hour, hourIndex) => (
                             <p key={hourIndex}>{hour}</p>
                           ))}
