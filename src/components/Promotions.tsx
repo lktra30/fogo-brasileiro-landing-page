@@ -31,13 +31,24 @@ const Promotions = () => {
   return (
     <section className="py-20 bg-black relative overflow-hidden" style={{
       backgroundImage: `
-        radial-gradient(circle at 20% 50%, rgba(0, 0, 0, 0.8) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(0, 0, 0, 0.8) 0%, transparent 50%),
-        radial-gradient(circle at 40% 80%, rgba(0, 0, 0, 0.8) 0%, transparent 50%),
-        linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #000000 100%)
+        radial-gradient(ellipse 800px 400px at 10% 20%, rgba(60, 60, 60, 0.4) 0%, transparent 50%),
+        radial-gradient(ellipse 600px 300px at 90% 80%, rgba(40, 40, 40, 0.5) 0%, transparent 60%),
+        radial-gradient(ellipse 1000px 500px at 50% 0%, rgba(80, 80, 80, 0.3) 0%, transparent 70%),
+        radial-gradient(ellipse 400px 200px at 30% 70%, rgba(50, 50, 50, 0.6) 0%, transparent 40%),
+        radial-gradient(ellipse 700px 350px at 70% 30%, rgba(35, 35, 35, 0.4) 0%, transparent 65%),
+        radial-gradient(ellipse 300px 150px at 85% 60%, rgba(45, 45, 45, 0.5) 0%, transparent 45%),
+        linear-gradient(135deg, #000000 0%, #1a1a1a 25%, #0d0d0d 50%, #000000 75%, #0a0a0a 100%)
       `,
-      backgroundSize: '100% 100%, 100% 100%, 100% 100%, 100% 100%'
+      backgroundSize: '100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%'
     }}>
+      {/* Animated smoke particles */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-10 left-1/4 w-32 h-32 bg-gray-600 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '0s', animationDuration: '4s' }}></div>
+        <div className="absolute top-32 right-1/3 w-24 h-24 bg-gray-500 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '1s', animationDuration: '5s' }}></div>
+        <div className="absolute bottom-20 left-1/3 w-40 h-40 bg-gray-700 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s', animationDuration: '6s' }}></div>
+        <div className="absolute top-1/2 right-1/4 w-28 h-28 bg-gray-600 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '3s', animationDuration: '4.5s' }}></div>
+      </div>
+
       {/* Background watermark */}
       <div className="absolute inset-0 opacity-5">
         <div className="w-full h-full flex items-center justify-center">
@@ -58,7 +69,7 @@ const Promotions = () => {
             {deliveryServices.map((service, index) => {
               const IconComponent = service.icon;
               return (
-                <div key={index} className="bg-black bg-opacity-70 p-8 rounded-lg border border-gray-800">
+                <div key={index} className="bg-black bg-opacity-70 p-8 rounded-lg border border-gray-800 backdrop-blur-sm shadow-2xl">
                   <div className="flex justify-center mb-4">
                     <IconComponent size={64} color="white" />
                   </div>
