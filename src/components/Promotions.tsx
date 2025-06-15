@@ -29,12 +29,12 @@ const Promotions = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-800 relative overflow-hidden" style={{
+    <section className="py-20 bg-gray-900 relative overflow-hidden" style={{
       backgroundImage: `
-        radial-gradient(circle at 20% 50%, rgba(0, 0, 0, 0.3) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(0, 0, 0, 0.3) 0%, transparent 50%),
-        radial-gradient(circle at 40% 80%, rgba(0, 0, 0, 0.3) 0%, transparent 50%),
-        linear-gradient(135deg, #4a4a4a 0%, #2d2d2d 50%, #1a1a1a 100%)
+        radial-gradient(circle at 20% 50%, rgba(0, 0, 0, 0.5) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(0, 0, 0, 0.5) 0%, transparent 50%),
+        radial-gradient(circle at 40% 80%, rgba(0, 0, 0, 0.5) 0%, transparent 50%),
+        linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 50%, #000000 100%)
       `,
       backgroundSize: '100% 100%, 100% 100%, 100% 100%, 100% 100%'
     }}>
@@ -58,7 +58,7 @@ const Promotions = () => {
             {deliveryServices.map((service, index) => {
               const IconComponent = service.icon;
               return (
-                <div key={index} className="bg-black bg-opacity-30 p-8 rounded-lg border border-gray-600">
+                <div key={index} className="bg-black bg-opacity-50 p-8 rounded-lg border border-gray-700">
                   <div className="flex justify-center mb-4">
                     <IconComponent size={64} color="white" />
                   </div>
