@@ -2,6 +2,13 @@
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
+  const scrollToMenu = () => {
+    const menuSection = document.getElementById('menu');
+    if (menuSection) {
+      menuSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative h-[92vh] w-full overflow-hidden">
       {/* Background Image */}
@@ -30,8 +37,9 @@ const Hero = () => {
         <Button 
           className="font-display bg-brand-red hover:bg-red-700 text-white font-bold text-xl px-16 py-6 rounded-lg shadow-2xl transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1 border-4 border-red-800"
           size="lg"
+          onClick={scrollToMenu}
         >
-          RESERVE YOUR TABLE
+          VIEW MENU
         </Button>
       </div>
     </section>
