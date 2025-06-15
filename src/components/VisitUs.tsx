@@ -50,13 +50,16 @@ const VisitUs = () => {
                   }}
                 />
                 
-                <div className="absolute top-0 left-0 right-0 p-4 bg-black bg-opacity-50">
+                {/* Frosted overlay */}
+                <div className="absolute inset-0 bg-black bg-opacity-40 backdrop-blur-sm" />
+                
+                <div className="absolute top-0 left-0 right-0 p-4 bg-black bg-opacity-60">
                   <h3 className="font-display text-2xl font-semibold text-white mb-0 text-center">
                     {location.name}
                   </h3>
                 </div>
                 
-                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 p-6">
+                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-80 p-6">
                   <div className="space-y-4">
                     <div className="flex items-start gap-4">
                       <div className="w-8 h-8 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
