@@ -31,7 +31,7 @@ const Testimonials = () => {
     return Array.from({ length: 5 }, (_, i) => (
       <span 
         key={i} 
-        className={`text-xl ${i < rating ? 'text-brand-red' : 'text-gray-600'}`}
+        className={`text-2xl ${i < rating ? 'text-brand-red' : 'text-brand-wood'}`}
       >
         ★
       </span>
@@ -39,13 +39,13 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="py-20 bg-brand-black">
+    <section className="py-20 bg-brand-charcoal">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            O Que Dizem Nossos Clientes
+          <h2 className="font-display text-4xl md:text-5xl font-black text-brand-cream mb-4">
+            O Que Dizem Nossos <span className="text-brand-red">Clientes</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-xl text-brand-parchment max-w-2xl mx-auto font-bold">
             Authentic experiences shared by our valued guests
           </p>
         </div>
@@ -54,21 +54,21 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className="bg-gray-900 p-8 rounded-lg border border-gray-700 hover:border-brand-red transition-all duration-300"
+              className="bg-brand-wood-dark p-8 rounded-lg border-4 border-brand-wood hover:border-brand-red transition-all duration-300 shadow-2xl"
             >
-              <div className="flex items-center mb-4">
+              <div className="flex items-center mb-6">
                 {renderStars(testimonial.rating)}
               </div>
               
-              <p className="text-white text-lg mb-6 leading-relaxed italic">
+              <p className="text-brand-parchment text-lg mb-6 leading-relaxed italic font-medium">
                 "{testimonial.review}"
               </p>
               
-              <div className="border-t border-gray-700 pt-4">
-                <p className="text-brand-red font-bold text-lg">
+              <div className="border-t-2 border-brand-red pt-4">
+                <p className="text-brand-red font-black text-lg">
                   {testimonial.name}
                 </p>
-                <p className="text-gray-400">
+                <p className="text-brand-wood-light font-bold">
                   {testimonial.location}
                 </p>
               </div>
