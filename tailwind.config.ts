@@ -63,18 +63,12 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Rustic wooden color palette
-				'brand-red': '#B91C1C',
-				'brand-dark-red': '#7F1D1D',
-				'brand-wood-dark': '#2D1B0E',
-				'brand-wood': '#4A3429',
-				'brand-wood-light': '#6B4E37',
-				'brand-bark': '#3E2A1A',
-				'brand-charcoal': '#1C1C1C',
-				'brand-ash': '#2A2A2A',
-				'brand-cream': '#F7F3E9',
-				'brand-parchment': '#F4F0E6',
-				'brand-black': '#0A0A0A'
+				// Custom restaurant colors
+				'brand-red': '#D72638',
+				'brand-dark-red': '#7A1E1E',
+				'brand-cream': '#FAF8F5',
+				'brand-beige': '#F5F5F0',
+				'brand-black': '#000000'
 			},
 			fontFamily: {
 				'sans': ['Inter', 'system-ui', 'sans-serif'],
@@ -118,10 +112,6 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.6s ease-out'
-			},
-			backgroundImage: {
-				'wood-grain': 'linear-gradient(45deg, #4A3429 25%, #3E2A1A 25%, #3E2A1A 50%, #4A3429 50%, #4A3429 75%, #3E2A1A 75%, #3E2A1A)',
-				'charcoal-texture': 'radial-gradient(circle at 25% 25%, #2A2A2A 0%, #1C1C1C 50%, #0A0A0A 100%)'
 			}
 		}
 	},
