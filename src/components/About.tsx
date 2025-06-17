@@ -15,7 +15,7 @@ const About = () => {
             <div className="order-2 md:order-1 flex justify-center md:block mb-8 md:mb-0">
               <div className="aspect-square h-72 sm:h-60 md:h-auto overflow-hidden rounded-lg shadow-2xl border-4 border-gray-800 max-w-xs md:max-w-none">
                 <img 
-                  src="/lovable-uploads/about-us.webp" 
+                  src="/lovable-uploads/about-us.jpeg" 
                   alt="Brazilian flags and meat preparation"
                   className="w-full h-full object-cover"
                 />
@@ -26,7 +26,7 @@ const About = () => {
             <div className="order-1 md:order-2">
               <div className="space-y-4 sm:space-y-6 md:space-y-8 text-base sm:text-lg md:text-xl leading-relaxed text-gray-800 bg-white p-6 sm:p-8 rounded-lg shadow-xl border-l-4 sm:border-l-8 border-brand-red">
                 <p className="font-body font-medium">
-                At Fire Pit, a Southern Brazilian family brings authentic barbecue and warm traditions. Our grill chefs season premium cuts with rock salt and sear them over open flames, delivering smoky flavor and tender texture in every bite.
+                At Fire Pit, a Southern Brazilian family brings authentic churrasco and warm traditions. Our grill chefs season premium cuts with rock salt and sear them over open flames, delivering smoky flavor and tender texture in every bite.
                 </p>
                 
                 <p className="font-body italic text-brand-dark-red font-semibold text-2xl">

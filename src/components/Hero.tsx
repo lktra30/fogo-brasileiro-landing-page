@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   const scrollToMenu = () => {
-    const menuSection = document.getElementById('menu');
+    const menuSection = document.getElementById('delivery');
     if (menuSection) {
       menuSection.scrollIntoView({ behavior: 'smooth' });
     }
@@ -13,7 +13,7 @@ const Hero = () => {
       {/* Background Image - Full Cover */}
       <div className="absolute inset-0">
         <img 
-          src="/lovable-uploads/hero-photo.webp" 
+          src="/lovable-uploads/hero-photo.jpeg" 
           alt="Fire Pit Experience"
           className="w-full h-full object-cover"
         />

@@ -12,17 +12,17 @@ const Menu = () => {
     {
       name: "Picanha Premium",
       description: "The crown jewel of Brazilian barbecue, top sirloin cap grilled to perfection",
-      image: "/lovable-uploads/combinado.webp"
+      image: "/lovable-uploads/combinado.jpeg"
     },
     {
       name: "Brazilian Bowl",
       description: "White rice, savory beans, potato salad, farofa, vinaigrette salad, and your meat choice",
-      image: "/lovable-uploads/br-bowl.webp"
+      image: "/lovable-uploads/br-bowl.jpeg"
     },
     {
       name: "On the Bun",
       description: "8 inches italian sub bun with 4 flavorful toppings and your meat choice, perfect for a quick bite",
-      image: "/lovable-uploads/bun-sdnw.webp"
+      image: "/lovable-uploads/bun-sdnw.jpeg"
     },
   ];
 

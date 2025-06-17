@@ -1,3 +1,4 @@
+
 import { Facebook, Instagram } from "lucide-react";
 
 const Footer = () => {
@@ -10,13 +11,14 @@ const Footer = () => {
           <div className="text-center md:text-left">
             <div className="mb-4 w-20 h-16 mx-auto md:mx-0">
               <img 
-                src="/lovable-uploads/4cd06a21-5648-4101-a069-37ee1a48c689.webp" 
+                src="/lovable-uploads/4cd06a21-5648-4101-a069-37ee1a48c689.png" 
                 alt="Fire Pit Logo"
                 className="w-full h-full object-cover rounded"
               />
             </div>
             <p className="font-body text-gray-300 leading-relaxed">
-              An authentic Brazilian barbecue experience in the heart of the city, where tradition meets passion — one perfect cut at a time.
+              Authentic Brazilian churrasco experience in the heart of the city. 
+              Where tradition meets passion, one perfect cut at a time.
             </p>
           </div>
 
@@ -90,7 +92,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center mt-8 pt-6 border-t border-gray-800">
             <p className="font-body text-gray-400">
-              © 2024 Fire Pit. All rights reserved. | Authentic Brazilian Barbecue Experience
+              © 2024 Fire Pit. All rights reserved. | Authentic Brazilian Churrasco Experience
             </p>
           </div>
         </div>
