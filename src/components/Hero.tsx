@@ -12,11 +12,16 @@ const Hero = () => {
     <section className="relative h-[90vh] w-full overflow-hidden">
       {/* Background Image - Full Cover */}
       <div className="absolute inset-0">
-        <img 
-          src="/lovable-uploads/hero-photo.jpeg" 
-          alt="Fire Pit Experience"
-          className="w-full h-full object-cover"
-        />
+        <picture>
+          <source srcSet="/lovable-uploads/hero-photo.webp" type="image/webp" />
+          <img
+            src="/lovable-uploads/hero-photo.jpeg"
+            alt="Fire Pit Experience"
+            className="w-full h-full object-cover"
+            width="1920"
+            height="1080"
+          />
+        </picture>
         {/* Overlay escuro para melhor contraste do texto */}
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       </div>

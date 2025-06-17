@@ -22,11 +22,16 @@ const Header = () => {
               onClick={() => scrollToSection('hero')}
               className="hover:opacity-80 transition-opacity w-32 h-24 sm:w-40 sm:h-28 md:w-52 md:h-36 -mb-6"
             >
-              <img 
-                src="/lovable-uploads/4cd06a21-5648-4101-a069-37ee1a48c689.png" 
-                alt="Fire Pit Logo"
-                className="w-full h-full object-contain rounded"
-              />
+              <picture>
+                <source srcSet="/lovable-uploads/4cd06a21-5648-4101-a069-37ee1a48c689.webp" type="image/webp" />
+                <img
+                  src="/lovable-uploads/4cd06a21-5648-4101-a069-37ee1a48c689.png"
+                  alt="Fire Pit Logo"
+                  className="w-full h-full object-contain rounded"
+                  width="208"
+                  height="144"
+                />
+              </picture>
             </button>
           </div>
 

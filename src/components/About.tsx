@@ -14,11 +14,18 @@ const About = () => {
             {/* Image on the left - hidden on mobile */}
             <div className="order-2 md:order-1 flex justify-center md:block mb-8 md:mb-0">
               <div className="aspect-square h-72 sm:h-60 md:h-auto overflow-hidden rounded-lg shadow-2xl border-4 border-gray-800 max-w-xs md:max-w-none">
-                <img 
-                  src="/lovable-uploads/about-us.jpeg" 
-                  alt="Brazilian flags and meat preparation"
-                  className="w-full h-full object-cover"
-                />
+                <picture>
+                  <source srcSet="/lovable-uploads/about-us.webp" type="image/webp" />
+                  <img
+                    src="/lovable-uploads/about-us.jpeg"
+                    alt="Brazilian flags and meat preparation"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                    width="640"
+                    height="640"
+                  />
+                </picture>
               </div>
             </div>
             
