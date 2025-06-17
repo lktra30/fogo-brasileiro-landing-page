@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import { Suspense, lazy } from "react";
 import Footer from "@/components/Footer";
+import Loading from "@/components/Loading";
 
 // Seções abaixo da primeira dobra carregadas sob demanda
 const About = lazy(() => import("@/components/About"));
@@ -17,7 +18,7 @@ const Index = () => {
         <Hero />
       </div>
 
-      <Suspense fallback={null}>
+      <Suspense fallback={<Loading />}>
         <div id="menu">
           <Menu />
         </div>
