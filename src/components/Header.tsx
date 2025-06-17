@@ -13,19 +13,19 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black/40 backdrop-blur-sm border-b border-gray-700/30 shadow-sm">
+    <header className="rounded-b-none md:rounded-b-full fixed top-0 left-0 right-0 z-50 bg-black/70 backdrop-blur-sm shadow-sm p-3 overflow-visible">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 relative z-10 overflow-visible">
             <button 
               onClick={() => scrollToSection('hero')}
-              className="hover:opacity-80 transition-opacity w-40 h-32"
+              className="hover:opacity-80 transition-opacity w-32 h-24 sm:w-40 sm:h-28 md:w-52 md:h-36 -mb-6"
             >
               <img 
-                src="/lovable-uploads/4cd06a21-5648-4101-a069-37ee1a48c689.png" 
+                src="/lovable-uploads/4cd06a21-5648-4101-a069-37ee1a48c689.webp" 
                 alt="Fire Pit Logo"
-                className="w-full h-full object-cover rounded"
+                className="w-full h-full object-contain rounded"
               />
             </button>
           </div>
@@ -33,28 +33,28 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <button 
-              onClick={() => scrollToSection('hero')}
-              className="text-white hover:text-brand-red transition-colors font-medium"
-            >
-              Home
-            </button>
-            <button 
               onClick={() => scrollToSection('about')}
-              className="text-white hover:text-brand-red transition-colors font-medium"
+              className="text-white hover:text-brand-red transition-colors font-light"
             >
               About Us
             </button>
             <button 
               onClick={() => scrollToSection('menu')}
-              className="text-white hover:text-brand-red transition-colors font-medium"
+              className="text-white hover:text-brand-red transition-colors font-light"
             >
               Menu
             </button>
             <button 
               onClick={() => scrollToSection('visit')}
-              className="text-white hover:text-brand-red transition-colors font-medium"
+              className="text-white hover:text-brand-red transition-colors font-light"
             >
-              Contact
+              Locations
+            </button>
+            <button 
+              onClick={() => scrollToSection('promotions')}
+              className="text-white hover:text-brand-red transition-colors font-light"
+            >
+              Delivery
             </button>
           </nav>
 
@@ -72,28 +72,28 @@ const Header = () => {
           <div className="md:hidden py-4 border-t border-gray-700/30">
             <nav className="flex flex-col space-y-4">
               <button 
-                onClick={() => scrollToSection('hero')}
-                className="text-white hover:text-brand-red transition-colors font-medium text-left"
-              >
-                Home
-              </button>
-              <button 
                 onClick={() => scrollToSection('about')}
                 className="text-white hover:text-brand-red transition-colors font-medium text-left"
               >
                 About Us
               </button>
               <button 
+                onClick={() => scrollToSection('visit')}
+                className="text-white hover:text-brand-red transition-colors font-medium text-left"
+              >
+                Locations
+              </button>
+              <button 
+                onClick={() => scrollToSection('promotions')}
+                className="text-white hover:text-brand-red transition-colors font-medium text-left"
+              >
+                Delivery
+              </button>
+              <button 
                 onClick={() => scrollToSection('menu')}
                 className="text-white hover:text-brand-red transition-colors font-medium text-left"
               >
                 Menu
-              </button>
-              <button 
-                onClick={() => scrollToSection('visit')}
-                className="text-white hover:text-brand-red transition-colors font-medium text-left"
-              >
-                Contact
               </button>
             </nav>
           </div>

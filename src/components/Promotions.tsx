@@ -18,7 +18,7 @@ const Promotions = () => {
       name: "DoorDash",
       icon: SiDoordash,
       url: "https://www.doordash.com",
-      description: "Reliable delivery service"
+      description: "Reliable delivery service in minutes"
     },
     {
       name: "Toast",
@@ -62,7 +62,7 @@ const Promotions = () => {
             Delivery
           </h2>
           <p className="font-body text-xl text-white mb-12 opacity-90">
-            Enjoy our authentic Brazilian churrasco from the comfort of your home
+            Enjoy our authentic Brazilian barbecue from the comfort of your home
           </p>
           
           <div className="grid md:grid-cols-3 gap-8 mb-12">

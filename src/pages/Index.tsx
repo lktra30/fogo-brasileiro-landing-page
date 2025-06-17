@@ -18,14 +18,15 @@ const Index = () => {
       <div id="menu">
         <Menu />
       </div>
-      <Promotions />
-      <div id="visit">
-        <VisitUs />
-      </div>
       <div id="about">
         <About />
       </div>
-      {/* <Testimonials /> */}
+      <div id="promotions">
+        <Promotions />
+      </div>
+      <div id="visit">
+        <VisitUs />
+      </div>
       <Footer />
     </div>
   );

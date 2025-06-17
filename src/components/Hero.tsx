@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -10,37 +9,54 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative h-[92vh] w-full overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('/lovable-uploads/02bfcd84-442a-4e3f-90d1-860aae62201c.png')`
-        }}
-      />
+    <section className="relative h-[90vh] w-full overflow-hidden">
+      {/* Background Image - Full Cover */}
+      <div className="absolute inset-0">
+        <img 
+          src="/lovable-uploads/hero-photo.webp" 
+          alt="Fire Pit Experience"
+          className="w-full h-full object-cover"
+        />
+        {/* Overlay escuro para melhor contraste do texto */}
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      </div>
       
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-70" />
-      
-      {/* Content */}
-      <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center pt-16">
-        <div className="animate-fade-in w-full min-w-[1000px] max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
-          <img 
-            src="/lovable-uploads/4cd06a21-5648-4101-a069-37ee1a48c689.png" 
-            alt="Fire Pit Logo"
-            className="w-full h-auto object-cover mx-auto drop-shadow-2xl rounded-lg"
-          />
+      {/* Content Overlay */}
+      <div className="relative z-10 h-full flex flex-col justify-center items-center px-6 lg:px-12">
+        {/* Texto principal */}
+        <div className="text-center mb-12 max-w-5xl">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-8 font-black tracking-tight leading-tight">
+            {/* Texto moderno e minimalista */}
+            <span className="text-white">
+              EXPERIENCE THE
+            </span>
+            <span className="block text-white relative" >
+              BRAZILIAN
+              {/* Underline vermelho moderno */}
+              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-32 sm:w-40 md:w-48 lg:w-56 xl:w-64 h-1 bg-red-600 rounded-full"></div>
+            </span>
+            <span className="block text-white mt-4" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.7)'}}>
+              FLAVOR
+            </span>
+          </h1>
+          
+          {/* Subtitle minimalista */}
+          <p className="text-white/90 text-lg sm:text-xl md:text-2xl font-light mb-8 max-w-2xl mx-auto">
+            Authentic Brazilian BBQ Experience
+          </p>
         </div>
-        <p className="font-display text-2xl md:text-3xl lg:text-4xl text-white mb-5 max-w-4xl animate-fade-in opacity-95 font-medium tracking-wide drop-shadow-lg">
-          Experience the Authentic Fire & Passion of Brazilian Churrasco
-        </p>
-        <Button 
-          className="font-display bg-brand-red hover:bg-red-700 text-white font-bold text-xl px-16 py-6 rounded-lg shadow-2xl transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1 border-4 border-red-800"
-          size="lg"
-          onClick={scrollToMenu}
-        >
-          VIEW MENU
-        </Button>
+        
+        {/* Botões CTA - Design moderno */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          {/* Botão branco com texto vermelho */}
+          <Button 
+            className="font-display bg-white hover:bg-gray-50 text-red-600 font-semibold text-lg px-8 py-4 rounded-full transition-all duration-300 hover:shadow-2xl transform hover:scale-105 border-2 border-white hover:border-gray-200"
+            size="lg"
+            onClick={scrollToMenu}
+          >
+            Order Now
+          </Button>
+        </div>
       </div>
     </section>
   );

@@ -98,5 +98,14 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Anton', system-ui, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Anton', system-ui, sans-serif;
+  }
+  
+  p, span, div, button, input, textarea {
+    font-family: 'Anton', system-ui, sans-serif;
   }
 }

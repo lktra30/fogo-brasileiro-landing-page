@@ -21,7 +21,7 @@ const Testimonials = () => {
     },
     {
       name: "Carlos Mendoza",
-      review: "Outstanding churrasco experience. The gauchos know their craft and it shows in the quality of every cut served.",
+      review: "Outstanding barbecue experience. The gauchos know their craft and it shows in the quality of every cut served.",
       rating: 5,
       location: "Buenos Aires"
     }

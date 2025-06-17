@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -71,9 +70,9 @@ export default {
 				'brand-black': '#000000'
 			},
 			fontFamily: {
-				'sans': ['Inter', 'system-ui', 'sans-serif'],
-				'display': ['Special Elite', 'monospace'],
-				'body': ['Inter', 'system-ui', 'sans-serif'],
+				'sans': ['Montserrat', 'system-ui', 'sans-serif'],
+				'display': ['Special Elite', 'cursive', 'Montserrat', 'system-ui', 'sans-serif'],
+				'body': ['Montserrat', 'system-ui', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
