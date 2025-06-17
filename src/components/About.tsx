@@ -33,7 +33,7 @@ const About = () => {
             <div className="order-1 md:order-2">
               <div className="space-y-4 sm:space-y-6 md:space-y-8 text-base sm:text-lg md:text-xl leading-relaxed text-gray-800 bg-white p-6 sm:p-8 rounded-lg shadow-xl border-l-4 sm:border-l-8 border-brand-red">
                 <p className="font-body font-medium">
-                At Fire Pit, a Southern Brazilian family brings authentic churrasco and warm traditions. Our grill chefs season premium cuts with rock salt and sear them over open flames, delivering smoky flavor and tender texture in every bite.
+                At Fire Pit, a Southern Brazilian family brings authentic barbecue and warm traditions. Our grill chefs season premium cuts with rock salt and sear them over open flames, delivering smoky flavor and tender texture in every bite.
                 </p>
                 
                 <p className="font-body italic text-brand-dark-red font-semibold text-2xl">

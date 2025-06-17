@@ -17,7 +17,7 @@ const Footer = () => {
               />
             </div>
             <p className="font-body text-gray-300 leading-relaxed">
-              Authentic Brazilian churrasco experience in the heart of the city. 
+              Authentic Brazilian barbecue experience in the heart of the city. 
               Where tradition meets passion, one perfect cut at a time.
             </p>
           </div>
@@ -92,7 +92,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center mt-8 pt-6 border-t border-gray-800">
             <p className="font-body text-gray-400">
-              © 2024 Fire Pit. All rights reserved. | Authentic Brazilian Churrasco Experience
+              © 2025 Fire Pit. All rights reserved. | Authentic Brazilian Barbecue Experience
             </p>
           </div>
         </div>
