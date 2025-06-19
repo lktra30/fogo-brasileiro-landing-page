@@ -28,7 +28,7 @@ const Footer = () => {
               <a href="#menu" className="font-body block text-gray-300 hover:text-brand-red transition-colors duration-300">
                 Menu
               </a>
-              <a href="https://linkme.bio/Firepitbbq" className="font-body block text-gray-300 hover:text-brand-red transition-colors duration-300">
+              <a href="#" className="font-body block text-gray-300 hover:text-brand-red transition-colors duration-300">
                 Catering & Events (Call Us!)
               </a>
             </div>
