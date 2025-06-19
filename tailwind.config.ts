@@ -63,7 +63,7 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				// Custom restaurant colors
-				'brand-red': '#D72638',
+				'brand-red': '#a8392e',
 				'brand-dark-red': '#7A1E1E',
 				'brand-cream': '#FAF8F5',
 				'brand-beige': '#F5F5F0',
@@ -71,7 +71,7 @@ export default {
 			},
 			fontFamily: {
 				'sans': ['Montserrat', 'system-ui', 'sans-serif'],
-				'display': ['Special Elite', 'cursive', 'Montserrat', 'system-ui', 'sans-serif'],
+				'display': ['Montserrat', 'system-ui', 'sans-serif'],
 				'body': ['Montserrat', 'system-ui', 'sans-serif'],
 			},
 			borderRadius: {

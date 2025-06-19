@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="text-center md:text-left">
             <div className="mb-4 w-20 h-16 mx-auto md:mx-0">
               <img 
-                src="/lovable-uploads/4cd06a21-5648-4101-a069-37ee1a48c689.png" 
+                src="/lovable-uploads/LOGO.png" 
                 alt="Fire Pit Logo"
                 className="w-full h-full object-cover rounded"
               />

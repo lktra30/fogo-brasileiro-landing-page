@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -107,5 +106,65 @@
   
   p, span, div, button, input, textarea {
     font-family: 'Anton', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  /* Text balance and wrap utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Custom animations for BBQ theme */
+  @keyframes smoke-drift {
+    0%, 100% {
+      transform: translateX(0) translateY(0) scale(1);
+      opacity: 0.05;
+    }
+    25% {
+      transform: translateX(10px) translateY(-5px) scale(1.1);
+      opacity: 0.03;
+    }
+    50% {
+      transform: translateX(-5px) translateY(-10px) scale(1.05);
+      opacity: 0.04;
+    }
+    75% {
+      transform: translateX(15px) translateY(5px) scale(0.95);
+      opacity: 0.02;
+    }
+  }
+
+  @keyframes charcoal-glow {
+    0%, 100% {
+      opacity: 0.04;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.06;
+      transform: scale(1.05);
+    }
+  }
+
+  .animate-smoke {
+    animation: smoke-drift 20s ease-in-out infinite;
+  }
+
+  .animate-charcoal {
+    animation: charcoal-glow 8s ease-in-out infinite;
+  }
+
+  /* Texture overlays */
+  .texture-charcoal {
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(0,0,0,0.05) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(139,69,19,0.03) 0%, transparent 50%),
+      radial-gradient(circle at 40% 20%, rgba(220,38,38,0.02) 0%, transparent 50%);
+  }
+
+  .texture-grill {
+    background-image: 
+      repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(0,0,0,0.02) 40px, rgba(0,0,0,0.02) 42px),
+      repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(0,0,0,0.02) 40px, rgba(0,0,0,0.02) 42px);
   }
 }

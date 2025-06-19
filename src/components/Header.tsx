@@ -13,19 +13,19 @@ const Header = () => {
   };
 
   return (
-    <header className="rounded-b-none md:rounded-b-full fixed top-0 left-0 right-0 z-50 bg-black/70 backdrop-blur-sm shadow-sm p-3 overflow-visible">
+    <header className="rounded-b-none md:rounded-b-full fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm shadow-sm p-3 overflow-visible">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-14 md:h-16">
           {/* Logo */}
           <div className="flex-shrink-0 relative z-10 overflow-visible">
             <button 
               onClick={() => scrollToSection('hero')}
-              className="hover:opacity-80 transition-opacity w-32 h-24 sm:w-40 sm:h-28 md:w-52 md:h-36 -mb-6"
+              className="hover:opacity-80 transition-opacity w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-26 -mb-2"
             >
               <picture>
-                <source srcSet="/lovable-uploads/4cd06a21-5648-4101-a069-37ee1a48c689.webp" type="image/webp" />
+                <source srcSet="/lovable-uploads/LOGO.png" type="image/png" />
                 <img
-                  src="/lovable-uploads/4cd06a21-5648-4101-a069-37ee1a48c689.png"
+                  src="/lovable-uploads/LOGO.png"
                   alt="Fire Pit Logo"
                   className="w-full h-full object-contain rounded"
                   width="208"

@@ -1,7 +1,40 @@
 const About = () => {
   return (
-    <section className="min-h-screen flex items-center py-16 md:py-24 bg-brand-cream relative border-t-4 border-brand-red">
-      <div className="container mx-auto px-4">
+    <section className="min-h-screen flex items-center md:py-24 bg-brand-cream relative border-t-4 border-brand-red overflow-hidden">
+      {/* Wood grain texture pattern */}
+      <div className="absolute inset-0 opacity-[0.03]">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `repeating-linear-gradient(90deg, transparent, transparent 20px, rgba(139,69,19,.3) 20px, rgba(139,69,19,.3) 22px),
+                           repeating-linear-gradient(0deg, transparent, transparent 20px, rgba(139,69,19,.3) 20px, rgba(139,69,19,.3) 22px)`,
+        }}></div>
+      </div>
+      
+      {/* Smoke effect gradients */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute inset-0 bg-gradient-to-tl from-gray-900/5 via-transparent to-amber-900/3"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-transparent via-red-900/2 to-gray-900/4"></div>
+      </div>
+      
+      {/* Red light effect from bottom to top */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-red/30 via-brand-red/5 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-brand-red/10 via-brand-red/3 to-transparent"></div>
+        <div className="absolute bottom-0 left-1/4 right-1/4 h-1/3 bg-gradient-to-t from-brand-red/20 via-brand-red/8 to-transparent blur-xl"></div>
+      </div>
+      
+      {/* Charcoal and fire decorative elements */}
+      <div className="absolute top-20 right-10 w-40 h-40 bg-gray-800/4 rounded-full blur-3xl transform rotate-45 animate-charcoal"></div>
+      <div className="absolute bottom-10 left-20 w-56 h-56 bg-amber-700/5 rounded-full blur-3xl animate-smoke"></div>
+      <div className="absolute top-1/3 right-1/4 w-32 h-32 bg-red-800/4 rounded-full blur-2xl animate-charcoal"></div>
+      <div className="absolute bottom-1/3 left-1/3 w-28 h-28 bg-orange-900/4 rounded-full blur-2xl animate-smoke"></div>
+      
+      {/* Subtle grill marks pattern */}
+      <div className="absolute inset-0 opacity-[0.02]" style={{
+        backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 50px, rgba(0,0,0,.5) 50px, rgba(0,0,0,.5) 52px),
+                         repeating-linear-gradient(-45deg, transparent, transparent 50px, rgba(0,0,0,.5) 50px, rgba(0,0,0,.5) 52px)`,
+      }}></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Decorative line */}
           <div className="w-32 h-2 bg-brand-red mx-auto mb-10 shadow-lg" />
