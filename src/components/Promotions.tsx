@@ -1,10 +1,18 @@
-
 import { Button } from "@/components/ui/button";
-import { Car, DoorOpen, Utensils, Truck } from "lucide-react";
+import { Truck } from "lucide-react";
 
 import { SiUbereats, SiDoordash } from "react-icons/si";
 import { RiBreadLine } from "react-icons/ri";
 
+// Complex multi-layered background gradients
+const bgGradient =
+  'radial-gradient(ellipse 800px 400px at 10% 20%, rgba(60,60,60,0.4) 0%, transparent 50%),\
+  radial-gradient(ellipse 600px 300px at 90% 80%, rgba(40,40,40,0.5) 0%, transparent 60%),\
+  radial-gradient(ellipse 1000px 500px at 50% 0%, rgba(80,80,80,0.3) 0%, transparent 70%),\
+  radial-gradient(ellipse 400px 200px at 30% 70%, rgba(50,50,50,0.6) 0%, transparent 40%),\
+  radial-gradient(ellipse 700px 350px at 70% 30%, rgba(35,35,35,0.4) 0%, transparent 65%),\
+  radial-gradient(ellipse 300px 150px at 85% 60%, rgba(45,45,45,0.5) 0%, transparent 45%),\
+  linear-gradient(135deg,#000000 0%,#1a1a1a 25%,#0d0d0d 50%,#000000 75%,#0a0a0a 100%)';
 
 const Promotions = () => {
   const deliveryServices = [
@@ -29,18 +37,14 @@ const Promotions = () => {
   ];
 
   return (
-    <section className="py-20 bg-black relative overflow-hidden" style={{
-      backgroundImage: `
-        radial-gradient(ellipse 800px 400px at 10% 20%, rgba(60, 60, 60, 0.4) 0%, transparent 50%),
-        radial-gradient(ellipse 600px 300px at 90% 80%, rgba(40, 40, 40, 0.5) 0%, transparent 60%),
-        radial-gradient(ellipse 1000px 500px at 50% 0%, rgba(80, 80, 80, 0.3) 0%, transparent 70%),
-        radial-gradient(ellipse 400px 200px at 30% 70%, rgba(50, 50, 50, 0.6) 0%, transparent 40%),
-        radial-gradient(ellipse 700px 350px at 70% 30%, rgba(35, 35, 35, 0.4) 0%, transparent 65%),
-        radial-gradient(ellipse 300px 150px at 85% 60%, rgba(45, 45, 45, 0.5) 0%, transparent 45%),
-        linear-gradient(135deg, #000000 0%, #1a1a1a 25%, #0d0d0d 50%, #000000 75%, #0a0a0a 100%)
-      `,
-      backgroundSize: '100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%'
-    }}>
+    <section
+      className="py-20 bg-black relative overflow-hidden"
+      style={{
+        backgroundImage: bgGradient,
+        backgroundSize:
+          '100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%',
+      }}
+    >
       {/* Animated smoke particles */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-10 left-1/4 w-32 h-32 bg-gray-600 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '0s', animationDuration: '4s' }}></div>
@@ -81,7 +85,7 @@ const Promotions = () => {
                   </p>
                   <Button 
                     className="font-body w-full bg-brand-red hover:bg-brand-dark-red text-white font-semibold text-lg py-3 rounded-lg transition-all duration-300 border-2 border-red-800"
-                    onClick={() => window.open(service.url, '_blank')}
+                    onClick={() => window.open('https://linkme.bio/Firepitbbq', '_blank')}
                   >
                     ORDER NOW
                   </Button>

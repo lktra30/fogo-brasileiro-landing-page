@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 
 const VisitUs = () => {
@@ -11,7 +10,7 @@ const VisitUs = () => {
         "Sunday - Thursday: 11:00 AM - 9:00 PM",
         "Friday - Saturday: 11:00 AM - 10:00 PM",
       ],
-      backgroundImage: "/lovable-uploads/solaire-loc.jpeg"
+      backgroundImage: "/lovable-uploads/solaire-loc_11zon.webp"
     },
     {
       name: "Food-Truck Location",
@@ -20,7 +19,7 @@ const VisitUs = () => {
       hours: [
         "Tuesday - Saturday: 11:00 AM - 7:30 PM"
       ],
-      backgroundImage: "/lovable-uploads/foodtruck-loc.jpg"
+      backgroundImage: "/lovable-uploads/foodtruck-loc_11zon.webp"
     }
   ];
 

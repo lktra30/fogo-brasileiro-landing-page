@@ -41,9 +41,9 @@ const About = () => {
             <div className="order-2 md:order-1 flex justify-center md:block mb-8 md:mb-0">
               <div className="aspect-square h-72 sm:h-60 md:h-auto overflow-hidden rounded-lg shadow-2xl border-4 border-gray-800 max-w-xs md:max-w-none">
                 <picture>
-                  <source srcSet="/lovable-uploads/about-us.webp" type="image/webp" />
+                  <source srcSet="/lovable-uploads/about-us_11zon.webp" type="image/webp" />
                   <img
-                    src="/lovable-uploads/about-us.jpeg"
+                    src="/lovable-uploads/about-us_11zon.webp"
                     alt="Brazilian flags and meat preparation"
                     className="w-full h-full object-cover"
                     loading="lazy"

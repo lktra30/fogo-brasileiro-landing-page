@@ -14,17 +14,17 @@ const Menu = () => {
     {
       name: "Picanha Premium",
       description: "The crown jewel of Brazilian barbecue, top sirloin cap grilled to perfection",
-      image: "/lovable-uploads/picanha.jpeg"
+      image: "/lovable-uploads/picanha_11zon.jpeg"
     },
     {
       name: "Brazilian Bowl",
       description: "White rice, savory beans, potato salad, farofa, vinaigrette salad, and your meat choice",
-      image: "/lovable-uploads/pote.webp"
+      image: "/lovable-uploads/pote_11zon.webp"
     },
     {
       name: "On the Bun",
       description: "8 inches italian sub bun with 4 flavorful toppings and your meat choice, perfect for a quick bite",
-      image: "/lovable-uploads/bun-sdnw.webp"
+      image: "/lovable-uploads/bun-sdnw_11zon.webp"
     },
   ];
 
@@ -65,7 +65,7 @@ const Menu = () => {
       {/* Smoke/charcoal gradient overlay */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gray-900/3 to-gray-900/5"></div>
-        <div className="absolute inset-0 bg-gradient-to-tr from-amber-900/5 via-transparent to-gray-800/5"></div>
+        <div className="absolute inset-0 bg-gradient-to-tr from-amber-900/5 via-transparent to-gray-800/50"></div>
       </div>
       
       {/* Decorative charcoal marks */}
@@ -75,11 +75,13 @@ const Menu = () => {
       
       <div className="container mx-auto px-1 sm:px-4 max-w-7xl h-full flex flex-col justify-between min-h-[calc(80vh-1rem)] relative z-10">
         {/* Título horizontal centralizado */}
-        {/* <div className="text-center py-2 sm:py-2 md:py-2 w-full flex-shrink-0">
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-gray-900 tracking-wide drop-shadow-md">
+        <div className="mb-2 text-center py-2 sm:py-2 md:py-2 w-full flex-shrink-0">
+          <h2 className="font-display text-3xl md:text-5xl font-bold text-gray-900 tracking-wide drop-shadow-md relative inline-block">
             BEST SELLERS
+            {/* Underline */}
+            <span className="block w-24 sm:w-32 h-1 bg-brand-red rounded-full mt-2 mx-auto"></span>
           </h2>
-        </div> */}
+        </div>
 
         {/* Carousel */}
         <div className="relative w-full mx-auto flex-1 flex items-center min-h-0 pb-1 sm:pb-2">
@@ -123,10 +125,10 @@ const Menu = () => {
             </CarouselContent>
             {/* Setas responsivas */}
             <CarouselPrevious 
-              className="-left-2 sm:-left-4 top-1/2 -translate-y-1/2 z-10 h-8 w-8 sm:h-10 sm:w-10 border-2 border-gray-800 bg-white/90 backdrop-blur-md hover:bg-white shadow-lg"
+              className="-left-2 sm:-left-4 top-1/2 -translate-y-1/2 z-10 h-8 w-8 sm:h-10 sm:w-10 bg-brand-red hover:bg-brand-dark-red text-white rounded-full shadow-xl"
             />
             <CarouselNext 
-              className="-right-2 sm:-right-4 top-1/2 -translate-y-1/2 z-10 h-8 w-8 sm:h-10 sm:w-10 border-2 border-gray-800 bg-white/90 backdrop-blur-md hover:bg-white shadow-lg"
+              className="-right-2 sm:-right-4 top-1/2 -translate-y-1/2 z-10 h-8 w-8 sm:h-10 sm:w-10 bg-brand-red hover:bg-brand-dark-red text-white rounded-full shadow-xl"
             />
           </Carousel>
         </div>
@@ -134,8 +136,9 @@ const Menu = () => {
         {/* CTA Button */}
         <div className={`text-center flex-shrink-0 transition-all duration-700 ${showCTA ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8 pointer-events-none"}`}>
           <Button 
-            className="font-display bg-red-600 hover:bg-red-700 text-white font-semibold text-base sm:text-lg px-8 sm:px-10 py-3 sm:py-4 rounded-full transition-all duration-300 hover:shadow-2xl transform hover:scale-105 border-0 shadow-lg"
+            className="font-display bg-brand-red hover:bg-brand-dark-red text-white font-semibold text-base sm:text-lg px-8 sm:px-10 py-3 sm:py-4 rounded-full transition-all duration-300 hover:shadow-2xl transform hover:scale-105 border-0 shadow-lg"
             size="lg"
+            onClick={() => window.open('https://drive.google.com/drive/folders/1567TmUbpYRhg0bg9Wk00IuJ-RyjDCS0T', '_blank')}
           >
             View Full Menu
           </Button>

@@ -1,5 +1,4 @@
-
-import { Facebook, Instagram } from "lucide-react";
+import { Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -9,11 +8,11 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand Section */}
           <div className="text-center md:text-left">
-            <div className="mb-4 w-20 h-16 mx-auto md:mx-0">
+            <div className="mb-4 w-32 h-32 mx-auto md:mx-0">
               <img 
                 src="/lovable-uploads/LOGO.png" 
                 alt="Fire Pit Logo"
-                className="w-full h-full object-cover rounded"
+                className="w-full h-full object-contain"
               />
             </div>
             <p className="font-body text-gray-300 leading-relaxed">
@@ -29,14 +28,8 @@ const Footer = () => {
               <a href="#menu" className="font-body block text-gray-300 hover:text-brand-red transition-colors duration-300">
                 Menu
               </a>
-              <a href="#reservations" className="font-body block text-gray-300 hover:text-brand-red transition-colors duration-300">
-                Reservations
-              </a>
-              <a href="#events" className="font-body block text-gray-300 hover:text-brand-red transition-colors duration-300">
-                Private Events
-              </a>
-              <a href="#catering" className="font-body block text-gray-300 hover:text-brand-red transition-colors duration-300">
-                Catering
+              <a href="https://linkme.bio/Firepitbbq" className="font-body block text-gray-300 hover:text-brand-red transition-colors duration-300">
+                Catering & Events (Call Us!)
               </a>
             </div>
           </div>
@@ -60,13 +53,6 @@ const Footer = () => {
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
-              </a>
-              <a 
-                href="#" 
-                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-brand-red transition-all duration-300 transform hover:scale-110"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-5 h-5" />
               </a>
             </div>
           </div>

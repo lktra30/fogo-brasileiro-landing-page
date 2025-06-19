@@ -2,14 +2,14 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   const scrollToMenu = () => {
-    const menuSection = document.getElementById('delivery');
+    const menuSection = document.getElementById('promotions');
     if (menuSection) {
       menuSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
   return (
-    <section className="relative h-[90vh] w-full overflow-hidden bg-[url('/lovable-uploads/hero.png')]  bg-cover bg-center">
+    <section className="relative h-[90vh] w-full overflow-hidden bg-[url('/lovable-uploads/hero_11zon.jpg')] bg-cover bg-center">
       {/* Overlay escuro para melhor contraste do texto */}
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       
