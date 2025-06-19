@@ -100,6 +100,8 @@ const Menu = () => {
                         className="w-full h-full object-cover object-center"
                         loading="lazy"
                         decoding="async"
+                        width="800"
+                        height="800"
                       />
                       
                       {/* Texto sobreposto na parte inferior da imagem */}

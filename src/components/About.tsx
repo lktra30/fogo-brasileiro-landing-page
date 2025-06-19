@@ -15,13 +15,6 @@ const About = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-transparent via-red-900/2 to-gray-900/4"></div>
       </div>
       
-      {/* Red light effect from bottom to top */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-red/30 via-brand-red/5 to-transparent"></div>
-        <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-brand-red/10 via-brand-red/3 to-transparent"></div>
-        <div className="absolute bottom-0 left-1/4 right-1/4 h-1/3 bg-gradient-to-t from-brand-red/20 via-brand-red/8 to-transparent blur-xl"></div>
-      </div>
-      
       {/* Charcoal and fire decorative elements */}
       <div className="absolute top-20 right-10 w-40 h-40 bg-gray-800/4 rounded-full blur-3xl transform rotate-45 animate-charcoal"></div>
       <div className="absolute bottom-10 left-20 w-56 h-56 bg-amber-700/5 rounded-full blur-3xl animate-smoke"></div>
