@@ -50,6 +50,12 @@ const Header = () => {
               Menu
             </button>
             <button 
+              onClick={() => scrollToSection('catering')}
+              className="text-white hover:text-brand-red transition-colors font-light"
+            >
+              Catering
+            </button>
+            <button 
               onClick={() => scrollToSection('visit')}
               className="text-white hover:text-brand-red transition-colors font-light"
             >
@@ -83,6 +89,18 @@ const Header = () => {
                 About Us
               </button>
               <button 
+                onClick={() => scrollToSection('menu')}
+                className="text-white hover:text-brand-red transition-colors font-medium text-left"
+              >
+                Menu
+              </button>
+              <button 
+                onClick={() => scrollToSection('catering')}
+                className="text-white hover:text-brand-red transition-colors font-medium text-left"
+              >
+                Catering
+              </button>
+              <button 
                 onClick={() => scrollToSection('visit')}
                 className="text-white hover:text-brand-red transition-colors font-medium text-left"
               >
@@ -93,12 +111,6 @@ const Header = () => {
                 className="text-white hover:text-brand-red transition-colors font-medium text-left"
               >
                 Delivery
-              </button>
-              <button 
-                onClick={() => scrollToSection('menu')}
-                className="text-white hover:text-brand-red transition-colors font-medium text-left"
-              >
-                Menu
               </button>
             </nav>
           </div>
