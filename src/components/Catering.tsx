@@ -116,18 +116,20 @@ const Catering = () => {
               Contact us today to discuss your catering needs and create an unforgettable Brazilian BBQ experience for your guests.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
+              <Button
                 className="bg-red-600 hover:bg-red-700 text-white font-semibold text-lg px-8 py-4 rounded-full transition-all duration-300 hover:shadow-2xl transform hover:scale-105"
                 size="lg"
+                asChild
               >
-                Get Quote
+                <a href="#visit">Get Quote</a>
               </Button>
               <Button 
                 variant="outline"
                 className="border-red-600 text-red-600 hover:bg-red-600 hover:text-white font-semibold text-lg px-8 py-4 rounded-full transition-all duration-300 hover:shadow-2xl transform hover:scale-105"
                 size="lg"
+                asChild
               >
-                View Menu
+                <a href="https://drive.google.com/drive/folders/1567TmUbpYRhg0bg9Wk00IuJ-RyjDCS0T">View Menu</a>
               </Button>
             </div>
           </div>
