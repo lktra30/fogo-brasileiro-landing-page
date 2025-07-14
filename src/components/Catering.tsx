@@ -47,22 +47,47 @@ const Catering = () => {
             
             {/* Content */}
             <div className="space-y-6">
-              <div className="bg-white p-6 rounded-lg shadow-xl border-l-8 border-red-600">
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              <div className="group relative bg-gradient-to-br from-white via-gray-50 to-white p-8 rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden">
+                {/* Decorative elements */}
+                <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-red-500 via-red-600 to-red-700"></div>
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-red-100 rounded-full opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
+                <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-amber-100 rounded-full opacity-10 group-hover:opacity-20 transition-opacity duration-300"></div>
+                
+                {/* Icon */}
+                <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-xl mb-6 shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M9 9h.01M15 9h.01" />
+                  </svg>
+                </div>
+                
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 group-hover:text-red-600 transition-colors duration-300">
                   Delivery & Pickup (Trays)
                 </h3>
-                <ul className="text-gray-600 space-y-3 text-lg">
-                  <li className="flex items-center">
-                    <span className="w-3 h-3 bg-red-600 rounded-full mr-3"></span>
-                    Menu priced per tray and portion
+                
+                <ul className="text-gray-700 space-y-4 text-lg relative z-10">
+                  <li className="flex items-center group/item">
+                    <div className="flex items-center justify-center w-6 h-6 bg-gradient-to-br from-red-500 to-red-600 rounded-full mr-4 shadow-md group-hover/item:shadow-lg transition-all duration-300">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="group-hover/item:text-gray-900 transition-colors duration-200">Menu priced per tray and portion</span>
                   </li>
-                  <li className="flex items-center">
-                    <span className="w-3 h-3 bg-red-600 rounded-full mr-3"></span>
-                    Select trays for pickup or delivery.
+                  <li className="flex items-center group/item">
+                    <div className="flex items-center justify-center w-6 h-6 bg-gradient-to-br from-red-500 to-red-600 rounded-full mr-4 shadow-md group-hover/item:shadow-lg transition-all duration-300">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="group-hover/item:text-gray-900 transition-colors duration-200">Select trays for pickup or delivery</span>
                   </li>
-                  <li className="flex items-center">
-                    <span className="w-3 h-3 bg-red-600 rounded-full mr-3"></span>
-                    Perfect for events of 20 or more guests
+                  <li className="flex items-center group/item">
+                    <div className="flex items-center justify-center w-6 h-6 bg-gradient-to-br from-red-500 to-red-600 rounded-full mr-4 shadow-md group-hover/item:shadow-lg transition-all duration-300">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="group-hover/item:text-gray-900 transition-colors duration-200">Perfect for events of 20 or more guests</span>
                   </li>
                 </ul>
               </div>
@@ -72,23 +97,41 @@ const Catering = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
             {/* Content */}
             <div className="order-2 lg:order-1 space-y-6">
-              <div className="bg-white p-6 rounded-lg shadow-xl border-l-8 border-red-600">
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              <div className="group relative bg-gradient-to-br from-white via-gray-50 to-white p-8 rounded-2xl shadow-2xl border border-gray-200 hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden">
+                {/* Decorative elements */}
+                <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-amber-500 via-orange-600 to-red-600"></div>
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-amber-100 rounded-full opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
+                <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-red-100 rounded-full opacity-10 group-hover:opacity-20 transition-opacity duration-300"></div>
+                
+                {/* Icon */}
+                <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-600 rounded-xl mb-6 shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                  </svg>
+                </div>
+                
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 group-hover:text-orange-600 transition-colors duration-300">
                   On-Site Experience
                 </h3>
-                <ul className="text-gray-600 space-y-3 text-lg">
-                  <li className="flex items-center">
-                    <span className="w-3 h-3 bg-red-600 rounded-full mr-3"></span>
-                    Fully staffed service with our Fire Pit experts
+                
+                <ul className="text-gray-700 space-y-4 text-lg relative z-10">
+                  <li className="flex items-center group/item">
+                    <div className="flex items-center justify-center w-6 h-6 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full mr-4 shadow-md group-hover/item:shadow-lg transition-all duration-300">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="group-hover/item:text-gray-900 transition-colors duration-200">Fully staffed service with our Fire Pit experts</span>
                   </li>
-                  <li className="flex items-center">
-                    <span className="w-3 h-3 bg-red-600 rounded-full mr-3"></span>
-                    Pricing available upon request
+                  <li className="flex items-center group/item">
+                    <div className="flex items-center justify-center w-6 h-6 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full mr-4 shadow-md group-hover/item:shadow-lg transition-all duration-300">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="group-hover/item:text-gray-900 transition-colors duration-200">Pricing available upon request</span>
                   </li>
-                  {/* <li className="flex items-center">
-                    <span className="w-3 h-3 bg-red-600 rounded-full mr-3"></span>
-                    Flexible guest counts
-                  </li> */}
                 </ul>
               </div>
             </div>
