@@ -71,7 +71,7 @@ const Catering = () => {
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </div>
-                    <span className="group-hover/item:text-gray-900 transition-colors duration-200">Menu priced per tray and portion</span>
+                    <span className="group-hover/item:text-gray-900 transition-colors duration-200">Menu priced per person</span>
                   </li>
                   <li className="flex items-center group/item">
                     <div className="flex items-center justify-center w-6 h-6 bg-gradient-to-br from-red-500 to-red-600 rounded-full mr-4 shadow-md group-hover/item:shadow-lg transition-all duration-300">
