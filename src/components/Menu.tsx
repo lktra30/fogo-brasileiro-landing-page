@@ -8,8 +8,27 @@ import {
   CarouselPrevious,
   type CarouselApi,
 } from "@/components/ui/carousel";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { ChevronDown } from "lucide-react";
 
 const Menu = () => {
+  // Menu URLs for each location
+  const menuLocations = [
+    {
+      name: "Solaire Social Food Hall",
+      url: "/menu-solaire.png" // Substitua pela URL real do PDF
+    },
+    {
+      name: "Food-Truck Location", 
+      url: "/golder-arcade.png" // Substitua pela URL real do PDF
+    }
+  ];
+
   const menuItems = [
     {
       name: "Picanha Premium",
@@ -135,13 +154,31 @@ const Menu = () => {
 
         {/* CTA Button */}
         <div className={`text-center flex-shrink-0 transition-all duration-700 ${showCTA ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8 pointer-events-none"}`}>
-          <Button 
-            className="font-display bg-brand-red hover:bg-brand-dark-red text-white font-semibold text-base sm:text-lg px-8 sm:px-10 py-3 sm:py-4 rounded-full transition-all duration-300 hover:shadow-2xl transform hover:scale-105 border-0 shadow-lg"
-            size="lg"
-            onClick={() => window.open('https://drive.google.com/drive/folders/1567TmUbpYRhg0bg9Wk00IuJ-RyjDCS0T', '_blank')}
-          >
-            View Full Menu
-          </Button>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button 
+                className="font-display bg-brand-red hover:bg-brand-dark-red text-white font-semibold text-base sm:text-lg px-8 sm:px-10 py-3 sm:py-4 rounded-full transition-all duration-300 hover:shadow-2xl transform hover:scale-105 border-0 shadow-lg"
+                size="lg"
+              >
+                View Full Menu
+                <ChevronDown className="ml-2 h-4 w-4" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent 
+              align="center" 
+              className="w-56 mt-2 bg-white shadow-xl border border-gray-200 rounded-lg"
+            >
+              {menuLocations.map((location, index) => (
+                <DropdownMenuItem
+                  key={index}
+                  onClick={() => window.open(location.url, '_blank')}
+                  className="font-body text-gray-700 hover:bg-brand-red hover:text-white cursor-pointer px-4 py-3 transition-colors duration-200"
+                >
+                  {location.name}
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
       </div>
     </section>

@@ -63,11 +63,35 @@ const VisitUs = () => {
                       <div className="w-8 h-8 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
                         <span className="text-white text-sm">📍</span>
                       </div>
-                      <div>
+                      <div className="flex-1">
                         <h4 className="font-display text-lg font-semibold text-gray-900 mb-1">Address</h4>
-                        <p className="font-body text-gray-700 whitespace-pre-line">
+                        <p className="font-body text-gray-700 whitespace-pre-line mb-3">
                           {location.address}
                         </p>
+                        <div className="flex flex-wrap gap-2">
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            onClick={() => {
+                              const encodedAddress = encodeURIComponent(location.address.replace(/\n/g, ', '));
+                              window.open(`https://maps.google.com/maps?q=${encodedAddress}`, '_blank');
+                            }}
+                            className="text-xs hover:bg-brand-red hover:text-white transition-colors"
+                          >
+                            Open in Google Maps
+                          </Button>
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            onClick={() => {
+                              const encodedAddress = encodeURIComponent(location.address.replace(/\n/g, ', '));
+                              window.open(`https://waze.com/ul?q=${encodedAddress}`, '_blank');
+                            }}
+                            className="text-xs hover:bg-brand-red hover:text-white transition-colors"
+                          >
+                            Open in Waze
+                          </Button>
+                        </div>
                       </div>
                     </div>
 
@@ -75,9 +99,20 @@ const VisitUs = () => {
                       <div className="w-8 h-8 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0">
                         <span className="text-white text-sm">📞</span>
                       </div>
-                      <div>
+                      <div className="flex-1">
                         <h4 className="font-display text-lg font-semibold text-gray-900 mb-1">Phone</h4>
-                        <p className="font-body text-gray-700">{location.phone}</p>
+                        <p className="font-body text-gray-700 mb-3">{location.phone}</p>
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          onClick={() => {
+                            const phoneNumber = location.phone.replace(/[^\d]/g, '');
+                            window.open(`sms:${phoneNumber}`, '_self');
+                          }}
+                          className="text-xs hover:bg-brand-red hover:text-white transition-colors"
+                        >
+                          Send SMS
+                        </Button>
                       </div>
                     </div>
 
